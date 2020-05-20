@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+#wrapper {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  background-color: #FF5252;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+}
+
+.bodyhalf
+{
+    border-radius: 0;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    float: left;
+    color: white;
+}
+
+#TopBdy
+{
+    background-color: #FF5252;
+}
+
+#TopBdy h3
+{
+    text-align: center;
+}
+
+#BtmBody
+{
+    background-color: #222222;
+    height: 300px;
+}
+
+
+#BtmBody h1
+{
+    line-height: 150px;
+}
