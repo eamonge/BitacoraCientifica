@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
+import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,17 +21,20 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    NavigationMenuComponent
+    NavigationMenuComponent,
+    routingComponents,
+    LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
+    HttpClientModule, 
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-    ])
+    ]),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

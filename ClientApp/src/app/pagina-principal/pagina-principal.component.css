@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#wrapper {
+  position: absolute;
+  left: 0;
+  border-radius: 0;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+#SearchBar
+{
+    border: solid 2px #46A29F;
+    width: 100%;
+    height: 100px;
+}
+
+#SearchBar h1
+{
+    position: absolute;
+    left: 75px;
+    background-color: whitesmoke;
+    /*background-color: rgba(0, 0, 0, 0.40);*/
+    top: 25px;
+}
+
+#NavSearchBar
+{
+    z-index: 0;
+    background-color: whitesmoke!important;
+    position: relative;
+    top: 30px;
+    /*background-color: red!important;*/
+}
+
+.outsidebtn
+{
+    position: absolute;
+    color: red;
+    border: solid 1px #46A29F;
+    color: #46A29F;
+    z-index: 2;
+}
+
+#btnClear
+{
+    border: solid 1px #202833;
+    margin-left: 5px;
+    color: #202833;
+}
+
+#btnClear:hover
+{
+    background-color: #202833;
+    color: white;
+}
+
+#SearchContent
+{
+    margin-top: 5px;
+    height: 75%;
+    border: solid 2px #26C465;
+}
+
+#ContentDiv
+{
+    border-right: solid 2px #C5C6C8;
+    height: 100%;
+    width: 75%;
+}
+
+
+
+th
+{
+    border-right: solid 1px #66FCF1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #46A29F;
+}
