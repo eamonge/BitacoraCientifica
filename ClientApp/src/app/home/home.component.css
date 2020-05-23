@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
+#container
+{
+    text-align: center;
+}
+
+
+img {
+  background-color: #303E3C;
+}
+
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#cb2d3e, #ef473a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Jost', sans-serif;
+  /*line-height: 200px;*/
+  margin-bottom: 0;
+  margin-top: 100px;
+  /*line-height: 300px;*/
+}
+
+h3 {
+  font-family: 'Jost', sans-serif;
+  background: -webkit-linear-gradient(#cb2d3e, #ef473a);
+  -webkit-background-clip: text;
+  /*line-height: 1013.75px;*/
+  /*line-height: 100px;*/
+  -webkit-text-fill-color: transparent;
+}
+
+section
+{
+    position: absolute;
+    width: 100%;
+    margin-top: 12%;
+    height: 50%;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 
 #wrapper {
   position: absolute;
@@ -51,7 +92,6 @@ h1 {
 #BtmBody
 {
     background-color: #C5C6C8;
-    /*background-color: #222222;*/
     height: 50%;
 }
 
@@ -65,18 +105,12 @@ h1 {
     border: solid 2px #26C465;
     transition: all 300ms;
     background-color: #26C465;
-    /*background-color: #0B0C10;*/
-    /*background-color: rebeccapurple;*/
   }
 
 #BtmBody button:hover
 {
     padding-left: 50px;
     padding-right: 50px;
-    /*border: solid 2px #222222;
-    background-color: #FF5252;
-    color: #222222;*/
-    /*width: 350px;*/
 }
 
 
@@ -84,4 +118,4 @@ h1 {
 {
     transition: color 300ms;
     border: solid 2px cyan;
-}
+}*/

@@ -4,13 +4,13 @@ import { Component, OnInit } from '@angular/core';
 
 
 
-function Test() {
-  var btnTest = document.getElementById('TEST');
+//function Test() {
+//  var btnTest = document.getElementById('TEST');
 
-  btnTest.addEventListener('click', function () {
-    alert('Click');
-  });
-}
+//  btnTest.addEventListener('click', function () {
+//    alert('Click');
+//  });
+//}
 
 @Component({
   selector: 'app-home',
@@ -18,7 +18,7 @@ function Test() {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  ngOnInit() {
-    Test();
-  }
+  //ngOnInit() {
+  //  Test();
+  //}
 }

@@ -1,6 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-#wrapper {
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+#SearchBar {
+  width: 100%;
+  border-radius: 5px;
+  height: 150px;
+  border: solid 2px;
+  border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));
+  border-image-slice: 1;
+}
+
+  #SearchBar h1 {
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    background-color: #2D3035;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    color: white;
+  }
+
+input {
+  /*position: absolute;*/
+  margin: 5px;
+  margin-left: 5px;
+  width: 25%;
+  display: inline;
+  z-index: 3;
+  /*float: left;*/
+}
+
+button {
+  background-color: #3FA46A;
+  color: white;
+  /*margin: 1px;*/
+  /*float: left;*/
+}
+
+form {
+  margin-top: 26px;
+  width: 100%;
+  height: 110px;
+  /*display: inline-block;*/
+}
+
+.form-group {
+  /*margin-top: 10px;*/
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  /*height: 146px;*/
+}
+
+#SearchContent {
+  margin-top: 5px;
+  height: 77%;
+  background-color: #2D3035;
+  /*border: solid 2px;
+    border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));    
+    border-image-slice: 1;*/
+  padding: 0;
+}
+
+  #SearchContent .jumbotron {
+    float: left;
+    height: 80%;
+    margin-top: 3%;
+    background-color: #2D3035;
+    border: solid 1px #C7C8C3;
+  }
+
+#ContentTable {
+  margin-right: 15px;
+  margin-left: 20px;
+  width: 70%;
+}
+
+#ButtonSection {
+  width: 20%;
+  /*float: right;*/
+}
+
+table {
+}
+
+thead {
+  border: none;
+  background: #cb2d3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+tr {
+  color: #C7C8C3;
+}
+
+thead th {
+  border: none;
+  text-align: center;
+}
+
+tbody td {
+  border-bottom: solid 1px #EF473A;
+  border-top: none;
+}
+
+/*#wrapper {
   position: absolute;
   left: 0;
   border-radius: 0;
@@ -22,7 +130,6 @@
     position: absolute;
     left: 75px;
     background-color: whitesmoke;
-    /*background-color: rgba(0, 0, 0, 0.40);*/
     top: 25px;
 }
 
@@ -32,7 +139,6 @@
     background-color: whitesmoke!important;
     position: relative;
     top: 30px;
-    /*background-color: red!important;*/
 }
 
 .outsidebtn
@@ -79,4 +185,4 @@ th
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #46A29F;
-}
+}*/

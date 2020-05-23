@@ -1,0 +1,117 @@
+#container
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*
+    background: #1D976C;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #456161, #303E3C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #456161, #303E3C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    border-radius: 0;
+}
+
+#NavoBar
+{
+    background-color: pink!important;
+}
+
+#FormDiv
+{
+    display: inline-block;
+    margin-left: 25%;
+    position: relative;
+    margin-right: 25%;
+    top: 15%;
+    width: 50%;
+    height: 500px;
+    background-color: #303E3C;
+}
+
+img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 70%;*/
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+    /*width: 482px;
+    height: 500px;*/
+    background: url('https://i.imgur.com/0xOvKKq.jpg') fixed center center no-repeat;
+    /*background: url('../../assets/img/cabin.jpg') fixed center center no-repeat;*/
+    background-size: cover;
+}
+
+#InfoDiv
+{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+#InfoDiv h1
+{
+    text-align: center;
+    font-size: 32pt;
+    color: #C7C8C3;
+}
+
+#InfoDiv #TitleSection hr
+{
+    border-top: solid 1px #B17E5C;
+    margin: 0;
+    width: 175px;
+    margin-left: 15%;
+}
+
+#InfoDiv #TitleSection
+{
+    margin-top: 2px;
+}
+
+
+#InfoDiv #InfoSection
+{
+    /*border: solid 2px blue;*/
+    height: 355px;
+    /*margin-top: 35px;*/
+}
+
+#InfoDiv form
+{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#InfoDiv form label
+{
+    color: #C7C8C3;
+}
+
+#InfoDiv form input
+{
+    background-color: #303E3C;
+    border: none;
+    border-bottom: solid 1px #B17E5C;
+}
+
+#InfoDiv form input:focus
+{
+    box-shadow: none;
+    color: #C7C8C3;
+}
