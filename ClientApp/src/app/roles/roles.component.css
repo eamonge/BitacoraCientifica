@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.sideDivs {
+  width: 45%;
+  height: auto;
+  margin: 20px 5px 5px 20px;
+  border: solid 1px red;
+}
+
+.contentdivs {
+  /*background-color: teal;*/
+}
+
+form {
+    margin-top: 30px;
+}
+
+#Right {
+    border: solid 2px #C7C8C3;
+    width: 50%;
+    height: 443px;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 520px;
+}
+
+
+input {
+  width: 45%;
+  margin: 2px 0px 5px 10px;
+  background-color: #2D3035;
+  border: none;
+  border-bottom: solid 2px;
+  border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));
+  border-image-slice: 1;
+  display: inline;
+  color: white;
+  margin-right: 5px;
+}
+
+  input:read-only {
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    border: none;
+  }
+
+h1 {
+  position: absolute;
+  top: 2px;
+  padding: 0px 5px 0px 5px;
+  left: 50px;
+  font-size: 24pt;
+  background-color: #2D3035;
+}
+
+button {
+  width: 75px; 
+  color: white;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  margin-right: 5px;
+}
+
+input[type="radio"] {
+    width: 10px;
+}
+
+label {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*#btnClean {
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+}*/
+
+.fa-eraser {
+    transition: all 300ms;
+}
+
+/*#btnClean:hover .fa-eraser {
+    transform: translateY(-4px);
+}*/
+
+#comment {
+    background-color: #2D3035;
+    /*border: none;*/
+    border: solid 1px red;
+    margin: 10px;
+    width: 93%;
+}
+
+#one {
+    margin-left: 120px;
+}
+
+#Bottom h1
+{
+    color: pink;
+    top: 308px;
+}
+
+input:focus {
+    background-color: #2D3035;
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+label {
+    margin-left: 10px;
+}

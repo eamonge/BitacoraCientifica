@@ -84,30 +84,6 @@ form {
   /*float: right;*/
 }
 
-table {
-}
-
-thead {
-  border: none;
-  background: #cb2d3e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-tr {
-  color: #C7C8C3;
-}
-
-thead th {
-  border: none;
-  text-align: center;
-}
-
-tbody td {
-  border-bottom: solid 1px #EF473A;
-  border-top: none;
-}
-
 /*#wrapper {
   position: absolute;
   left: 0;

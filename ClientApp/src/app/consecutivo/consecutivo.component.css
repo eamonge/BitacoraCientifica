@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.contentdiv {
+    height: 100%;
+    width: 45%;
+    border: solid 2px;
+    height: auto;
+    border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));
+    border-image-slice: 1;
+    float: left;
+}
+
+h1 {
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+.LeftSide {
+  width: 30%;
+  margin: 20px 0px 0px 20px;
+}
+
+#RightSide {
+    margin: 20px 0px 0px 10px;
+    width: 65%;
+    height: 410px;
+    padding: 20px;
+    border: solid 1px #C7C8C3;
+    border-radius: 10px;
+}
+
+.LeftSide h1 {
+    position: absolute;
+    background-color: #2D3035;
+    color: white;
+    left: 40px;
+    top: 5px;
+    font-size: 18pt;
+}
+
+.form-group
+{
+    margin-top: 20px;
+    /*width: 100&*/
+    top: 35px;
+    color: white;
+}
+
+.LeftSide input {
+  width: 30%;
+  border-radius: 0;
+  background-color: #2D3035;
+  border: none;
+  border-bottom: solid 2px;
+  border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));
+  border-image-slice: 1;
+}
+
+input::placeholder {
+    color: #C7C8C3;
+}
+
+input:focus
+{
+    background-color: #2D3035;
+    color: white;
+    box-shadow: none;
+    outline: none;
+}
+
+label
+{
+    /*float: left;*/
+    /*margin-right: 50px;*/
+    line-height: 38px;
+    width: 145px;
+}
+
+.input-group {
+    width: 133px;
+}
+
+select {
+  background-color: #2D3035;
+  border-radius: 0;
+  color: white;
+  width: 133px;
+  border: none;
+  border-bottom: solid 2px;
+  border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));
+  border-image-slice: 1;
+}
+
+select:active{
+    outline: 0;
+    box-shadow: none;
+}
+
+select:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.opts{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    /*float: left;*/
+}
+
+
+form
+{
+    width: 100%;
+}
+
+section {
+    margin: 5px;
+    /*height: 75px;*/
+    /*display: inline;*/
+}
+
+#Bottom {
+    position: relative;
+    top: -220px;
+    height: 200px;
+    padding: 2px;
+}
+
+#Bottom h1 {
+    position: absolute;
+    top: -15px;
+    padding: 0px 2px 0px 2px;
+    left: 20px;
+    background-color: #2D3035;
+}
+
+#Bottom label {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    /*background-color: teal;*/
+    /*border: solid 1px white;*/
+    width: 100%;
+}
+
+#Bottom input {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    /*background-color: cyan;*/
+    margin-bottom: 2px;
+}
+
+#Bottom form  {
+    margin-top: 5px;
+}
+
+/*select.decorated option:hover {
+  box-shadow: 0 0 10px 100px #1882A8 inset;
+}*/

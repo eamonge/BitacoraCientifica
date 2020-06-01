@@ -72,6 +72,12 @@ li:hover span:before
     width: 100%;
 }
 
+li:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
 hr
 {
     margin-top: 200px;

@@ -1,55 +1,94 @@
-<div id="wrapper" class="jumbotron">
-  <div id="SearchBar" class="navsearch">
-    <h1 class="display-4">Información de la Rama Científica</h1>
-    <nav id="NavSearchBar" class="navbar navbar-light bg-light">
-      <form class="form-inline">
-        <input class="form-control mr-sm-2 seachinput" type="search" placeholder="Código" aria-label="Search">
-        <br />
-        <input id="NameSearch" class="form-control mr-sm-2 seachinput" type="search" placeholder="Nombre" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-        <button id="btnClear" class="btn">Clear</button>
+<div id="wrapper">
+  <div id="container">
+    <div id="header">
+      <div id="SearchbarLeft" class="searchbars">
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Código" />
+            <button class="btn" data-toggle="tooltip" data-placement="right" title="Buscar"><span><i class="fas fa-search"></i></span></button>
+            <!--<br /><br />-->
+            <input class="form-control" type="text" placeholder="Nombre" />
+            <button class="btn"><span>Clear</span></button>
+            <!--<button class="btn-2">Button 2</button>-->
+          </div>
+        </form>
+    </div>
+    <div id="SearchbarRight" class="searchbars">
+      <form>
+        <div class="form-group">
+          <input class="form-control" placeholder="Código" />
+          <button class="btn" data-toggle="tooltip" data-placement="right" title="Buscar"><i class="fas fa-search"></i></button>
+          <input class="form-control" placeholder="Nombre" />
+          <button class="btn">Clear</button>
+        </div>
       </form>
-    </nav>
-  </div>
-  <!--<div id="SearchBar" class="navsearch">
-    <h1 class="display-4">Búsqueda de proyecto</h1>
-    <nav id="NavSearchBar" class="navbar navbar-light bg-light">
-      <form class="form-inline">
-        <input class="form-control mr-sm-2 seachinput" type="search" placeholder="Código" aria-label="Search">
-        <br />
-        <input id="NameSearch" class="form-control mr-sm-2 seachinput" type="search" placeholder="Nombre" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-        <button id="btnClear" class="btn">Clear</button>
-      </form>
-    </nav>
-  </div>-->
-  <div id="SecondSearchBar">
-    <h1 class="display-4">Solo búsqueda</h1>
-    <br />
-    <form>
-      <div class="form-group">
-        <!--<label>Código de la rama científica</label>-->
-        <input type="text" class="form-control" />
-        <!--<br />-->
-        <!--<label>Nombre de la rama científica</label>-->
-        <input type="text" class="form-control"/>
-      </div>
-    </form>
-
-  </div>
-  <div id="SearchContent">
-    <div id="ContentDiv">
+    </div>
+    </div>
+    <div id="content">
       <table class="table">
         <thead>
           <tr>
             <th>Código</th>
-            <th>Proyecto</th>
+            <th>Nombre</th>
           </tr>
         </thead>
+        <tbody>
+          <tr>
+            <td>Row 1- A</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Row 2- A</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Row 3- A</td>
+            <td>A</td>
+          </tr>
+        </tbody>
+
       </table>
-    </div>
-    <div id="FuctionDiv">
 
     </div>
   </div>
 </div>
+
+
+<!--<div id="SearchBar" class="navsearch">
+  <h1 class="display-4">Información de la Rama Científica</h1>
+  <nav id="NavSearchBar" class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2 seachinput" type="search" placeholder="Código" aria-label="Search">
+      <br />
+      <input id="NameSearch" class="form-control mr-sm-2 seachinput" type="search" placeholder="Nombre" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+      <button id="btnClear" class="btn">Clear</button>
+    </form>
+  </nav>
+</div>
+<div id="SecondSearchBar">
+  <h1 class="display-4">Solo búsqueda</h1>
+  <br />
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control" />
+      <input type="text" class="form-control"/>
+    </div>
+  </form>
+
+</div>
+<div id="SearchContent">
+  <div id="ContentDiv">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Proyecto</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div id="FuctionDiv">
+
+  </div>
+</div>-->

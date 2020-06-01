@@ -1,6 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-#wrapper {
+.searchbars {
+  border: solid 1px #C7C8C3;
+  height: 150px;
+  float: left;
+  /*margin-left: 20px;
+  margin-top: 20px;*/
+}
+
+#container
+{
+    padding: 0;
+}
+
+#SearchbarLeft {
+  width: 50%;
+  margin-right: 15px;
+}
+
+#SearchbarRight {
+    width: 45%;
+}
+
+form {
+  padding: 20px;
+  height: 100%;
+}
+
+.form-group {
+  display: inline-block;
+}
+
+/*Btn*/
+
+input {
+  background-color: #2D3035;
+  border: none;
+  border-bottom: solid 1px #EF473A;
+  display: inline;
+  width: 50%;
+  color: #EF473A;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input:focus
+{
+    box-shadow: none;
+    background-color: #2D3035;
+}
+
+input::placeholder
+{
+    color: #EF473A;
+}
+
+button {
+  width: 75px;
+  color: white;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  position: absolute;
+  border: none;
+  z-index: 3;
+}
+
+
+/*span::after {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+  background: linear-gradient(to right, #ef473a, #cb2d3e);
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: width 300ms;
+}
+
+button:hover span:after
+{
+    width: 100%;
+}*/
+
+/*#SrchBtn::after
+{
+    top: 500px;
+}*/
+
+
+/*#wrapper {
   position: absolute;
   left: 0;
   border-radius: 0;
@@ -119,9 +211,6 @@ form
 {
     position: relative;
     height: 150px;
-    /*display: inline-block;
-    width: 300px;*/
-    /*top: -10px;*/
 }
 
 #SecondSearchBar form input
@@ -134,4 +223,4 @@ form
 #SearchContent form label
 {
     margin-left: 100px;
-}
+}*/
