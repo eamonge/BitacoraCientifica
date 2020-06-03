@@ -1,0 +1,21 @@
+.top {
+    border: solid 2px cyan;
+    width: 45%;
+    float: left;
+    margin: 20px;
+    height: 100px;
+}
+
+.display-4 {
+    position: absolute;
+    top: -1px;
+    font-size: 27pt;
+}
+
+#left h1 {
+  left: 40px;
+}
+
+#right h1 {
+    left: 550px;
+}
