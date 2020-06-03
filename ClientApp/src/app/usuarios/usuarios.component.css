@@ -1,4 +1,4 @@
-.top {
+/*.top {
     border: solid 2px cyan;
     width: 45%;
     float: left;
@@ -8,8 +8,10 @@
 
 .display-4 {
     position: absolute;
-    top: -1px;
+    top: 0px;
     font-size: 27pt;
+    background-color: #2D3035;
+    padding: 0px 5px 0px 5px;
 }
 
 #left h1 {
@@ -17,5 +19,35 @@
 }
 
 #right h1 {
-    left: 550px;
+    left: 560px;
 }
+
+label {
+    width: 75px;
+}
+
+input {
+    background-color: #2D3035;
+    display: inline;
+    width: 30%;
+    color: white;
+}
+
+input:focus {
+    box-shadow: 0;
+    outline: 0;
+    background-color: #2D3035;
+    color: white;
+}
+
+.form-group {
+    margin-top: 22px;
+}
+
+input:read-only {
+
+}
+
+input:read-only:focus {
+    background-color: pink;
+}*/

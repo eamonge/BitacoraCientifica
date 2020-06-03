@@ -16,18 +16,14 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Jost', sans-serif;
-  /*line-height: 200px;*/
   margin-bottom: 0;
   margin-top: 100px;
-  /*line-height: 300px;*/
 }
 
 h3 {
   font-family: 'Jost', sans-serif;
   background: -webkit-linear-gradient(#cb2d3e, #ef473a);
   -webkit-background-clip: text;
-  /*line-height: 1013.75px;*/
-  /*line-height: 100px;*/
   -webkit-text-fill-color: transparent;
 }
 
@@ -36,7 +32,8 @@ section
     position: absolute;
     width: 100%;
     margin-top: 12%;
-    height: 50%;
+    height: auto;
+    background-color: pink!important;
 }
 
 /*@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');

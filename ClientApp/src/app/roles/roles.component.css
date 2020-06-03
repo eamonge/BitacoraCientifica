@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.sideDivs {
+form {
+    margin-top: 25px;
+}
+
+#Bottom {
+    position: absolute;
+    width: 48%;
+    top: 390px;
+
+}
+
+label {
+    width: 175px;
+}
+
+/*.sideDivs {
   width: 45%;
   height: auto;
   margin: 20px 5px 5px 20px;
@@ -8,7 +23,6 @@
 }
 
 .contentdivs {
-  /*background-color: teal;*/
 }
 
 form {
@@ -75,23 +89,12 @@ label {
   font-family: 'Poppins', sans-serif;
 }
 
-/*#btnClean {
-    width: 75%;
-    margin-left: 10%;
-    margin-right: 10%;
-}*/
-
 .fa-eraser {
     transition: all 300ms;
 }
 
-/*#btnClean:hover .fa-eraser {
-    transform: translateY(-4px);
-}*/
-
 #comment {
     background-color: #2D3035;
-    /*border: none;*/
     border: solid 1px red;
     margin: 10px;
     width: 93%;
@@ -116,4 +119,4 @@ input:focus {
 
 label {
     margin-left: 10px;
-}
+}*/

@@ -1,130 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-#SearchLeft {
-  border: solid 2px;
-  border-image-source: linear-gradient(-90deg, rgb(203,45,62), rgb(239,71,58));
-  border-image-slice: 1;
+form {
+    margin-top: 20px;
 }
 
-  #SearchLeft h1 {
-    position: absolute;
-    top: 0px;
-    left: 45px;
-    padding: 0px 5px 0px 5px;
-    background-color: #2D3035;
-    color: white;
-    font-size: 28pt;
-    font-family: 'Jost', sans-serif;
-    display: inline-block;
-  }
-
-#SearchRight {
-  padding: 10px;
+label {
+    width: 225px;
 }
 
-#SearchRight input{
-    width: 100%;
+input[type="text"] {
+    width: 30%;
 }
-
-#SearchRight button
-{
-    display: inline;
-}
-
-.searchbars {
-    float: left;
-    width: 50%;
-    margin-top: 5px;
-    height: 150px;
-}
-
-input
-{
-    width: 45%;
-    display: inline;
-}
-
-form
-{
-    margin-top: 25px;
-}
-
-/*Btn*/
-
-#SearchLeft input {
-  display: inline;
-  width: 50%;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.form-control {
-  background-color: #2D3035;
-  border: none;
-  border-bottom: solid 1px #EF473A;
-  color: #EF473A;
-}
-
-.form-control:focus
-{
-    box-shadow: none;
-    color: #EF473A;
-    background-color: #2D3035;
-    border-bottom: solid 1px #EF473A;
-}
-
-.form-control:active {
-  box-shadow: none;
-  color: #EF473A;
-  background-color: #2D3035;
-}
-
-.form-control::placeholder {
-  color: #EF473A;
-}
-
- button {
-  width: 75px;
-  color: white;
-  background: #cb2d3e;
-  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
-  background: linear-gradient(to right, #ef473a, #cb2d3e);
-}
-
- #SearchRight button
- {
-     margin: 5px;
- }
-
- #content
- {
-     border: solid 1px #C7C8C3;
-     height: auto;
-     margin: 25px;
-     padding: 25px;
-     border-radius: 10px;
- }
-
-/*input {
-  background-color: #2D3035;
-  border: none;
-  border-bottom: solid 1px #EF473A;
-  display: inline;
-  width: 50%;
-  color: #EF473A;
-  margin-left: 5px;
-  margin-right: 5px;
-  box-shadow: none;
-}
-
-.form-control:focus
-{
-    background-color: #2D3035;
-    box-shadow: none!important;
-    color: #EF473A
-}
-
-input::placeholder
-{
-    color: #EF473A;
-}*/
