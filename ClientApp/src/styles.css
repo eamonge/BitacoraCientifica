@@ -198,7 +198,7 @@ label {
 }
 
 .row {
-    border: solid 1px green;
+    /*border: solid 1px green;*/
     height: auto;
 }
 
