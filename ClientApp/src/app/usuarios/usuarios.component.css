@@ -1,53 +1,62 @@
-/*.top {
-    border: solid 2px cyan;
-    width: 45%;
-    float: left;
-    margin: 20px;
-    height: 100px;
+form {
+    margin-top: 25px;
 }
-
-.display-4 {
-    position: absolute;
-    top: 0px;
-    font-size: 27pt;
-    background-color: #2D3035;
-    padding: 0px 5px 0px 5px;
-}
-
-#left h1 {
-  left: 40px;
-}
-
-#right h1 {
-    left: 560px;
+labelform {
+  margin-top: 25px;
 }
 
 label {
-    width: 75px;
+  width: 95px;
 }
 
-input {
-    background-color: #2D3035;
-    display: inline;
-    width: 30%;
-    color: white;
+#wrapper {
+  height: auto;
+  position: absolute;
+  top: 0;
+  height: 205%;
+  left: 12%;
+  width: 88%;
 }
 
-input:focus {
-    box-shadow: 0;
-    outline: 0;
-    background-color: #2D3035;
-    color: white;
+#container {
+  height: auto;
+  position: absolute;
+  top: 65px;
+  left: 5%;
+  width: 90%;
 }
 
-.form-group {
-    margin-top: 22px;
+input[type="radio"] {
+  margin-right: 5px;
 }
 
-input:read-only {
-
+.radioLabel {
+  padding: 5px;
+  width: 155px;
 }
 
-input:read-only:focus {
-    background-color: pink;
-}*/
+#RadioBtnSpan {
+  margin-left: 30%;
+  margin-right: 30%;
+  /*width: 5000px;*/
+}
+
+.sectionTitle {
+  font-size: 14pt;
+  margin-top: 10px;
+}
+
+.FormSection {
+  height: auto;
+  width: 135%;
+}
+
+  .FormSection input {
+    /*float: left;*/
+    width: 20%;
+    margin-right: 10px;
+  }
+
+  .FormSection label {
+    width: 165px;
+  }

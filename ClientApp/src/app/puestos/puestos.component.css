@@ -1,4 +1,21 @@
-.tophalves {
+label {
+    width: 150px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+#SearchBtn {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/*nav {
+    height: 200px;
+}*/
+
+/*.tophalves {
   border: solid 2px cyan;
   margin: 20px;
   width: 46%;
@@ -43,7 +60,6 @@
 
 input {
   width: 45%;
-  /*margin: 2px 0px 5px 10px;*/
   background-color: #2D3035;
   border: none;
   border-bottom: solid 2px;
@@ -76,4 +92,4 @@ input:read-only {
     height: auto;
     padding: 20px;
     border: solid 1px #808080;
-}
+}*/
