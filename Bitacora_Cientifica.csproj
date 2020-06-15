@@ -24,13 +24,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\API SERVICE\ServicioAPI.ts" />
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
     <None Remove="ClientApp\src\app\app-routing.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\API SERVICE\ServicioAPI.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\app-routing.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API_Bitacoras_Cientificas\API_Bitacoras_Cientificas.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
