@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+nav
+{
+    background-color: #2D3035;
+    height: 205vh;
+    width: 12%;
+}
+
+nav h1
+{
+    color: white;
+    text-align: center;
+}
+
+.nav-item
+{
+    border-top: solid 1px #C7C8C3;
+    height: 55px;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-link
+{
+    margin: 2px;
+    font-size: 12pt;
+    height: 25px;
+    line-height: 10px;
+    
+}
+
+a
+{
+    color: white!important;
+    line-height: 40px!important;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 300ms;
+}
+
+span::before
+{
+    position: absolute;
+    left: 0;
+    content: "";
+
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+
+    width: 0;
+    height: 54px;
+    z-index: -1;
+    transition: width 300ms;
+}
+
+li:hover span:before
+{
+    width: 100%;
+}
+
+li:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
+hr
+{
+    margin-top: 200px;
+    border-top: solid 1px cyan;
+    margin: 0;
+}
+
+#TDateDisplay {
+    height: auto;
+}
+
+#TDateDisplay h1 {
+  font-size: 12pt;
+  
+    font-family: 'Open Sans', sans-serif;
+}
+
+#TitleH1
+{
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+nav {
+  background-color: #26C465;
+}
+
+nav a
+{
+    color: white;
+    transition: color 300ms;
+}
+
+nav a:hover
+{
+    color: #222222!important;
+}
+
+nav .nav-link
+{
+    color: white;
+}
+
+.active
+{
+    color: white;
+}
+
+#LoginItem
+{
+    position: absolute;
+    right: 0;
+}
+
+/* Style The Dropdown Button
+.dropbtn {
+  background-color: #26C465;
+  color: white;
+  padding: 9px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+
+/* The container <div> - needed to position the dropdown content
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: color 300ms;
+}
+
+/* Dropdown Content (Hidden by Default) 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  /* Links inside the dropdown 
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+    /* Change color of dropdown links on hover 
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.dropdown:hover .dropbtn {
+  /*background-color: #3e8e41;
+  color: #222222;
+}
+*/

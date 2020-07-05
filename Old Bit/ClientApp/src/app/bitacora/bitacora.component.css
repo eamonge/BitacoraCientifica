@@ -1,0 +1,21 @@
+form {
+    margin-top: 25px;
+}
+
+label {
+    /*background-color: hotpink;*/
+    width: 160px;
+    margin-right: 5%;
+}
+
+input[type="date"] {
+    width: 40%;
+}
+
+input[type="radio"] {
+    margin-right: 15px;
+}
+
+.contentCol {
+    border: none;
+}
