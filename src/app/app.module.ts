@@ -23,6 +23,7 @@ import { BitacoraComponent } from './Componentes/bitacora/bitacora.component';
 import { ErroresComponent } from './Componentes/errores/errores.component';
 import { BitacoraExperimentalComponent } from './Componentes/bitacora-experimental/bitacora-experimental.component';
 import { UserBarComponent } from './Componentes/user-bar/user-bar.component';
+import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { UserBarComponent } from './Componentes/user-bar/user-bar.component';
     BitacoraComponent,
     ErroresComponent,
     BitacoraExperimentalComponent,
-    UserBarComponent
+    UserBarComponent,
+    NivelAcademicoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

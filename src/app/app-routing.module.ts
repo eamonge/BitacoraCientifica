@@ -14,6 +14,7 @@ import { UsuariosComponent } from './Componentes/usuarios/usuarios.component';
 import { BitacoraComponent } from './Componentes/bitacora/bitacora.component';
 import { ErroresComponent } from './Componentes/errores/errores.component';
 import { BitacoraExperimentalComponent } from './Componentes/bitacora-experimental/bitacora-experimental.component';
+import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
 
 const routes: Routes = [
   { path: 'main', component: PaginaPrincipalComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'usuarios', component: UsuariosComponent },
   { path: 'bitacora', component: BitacoraComponent },
   { path: 'errores', component: ErroresComponent },
-  { path: 'bitacora_experimental', component: BitacoraExperimentalComponent}
+  { path: 'bitacora_experimental', component: BitacoraExperimentalComponent},
+  { path: 'nivel_academico', component: NivelAcademicoComponent }
 ]
 
 

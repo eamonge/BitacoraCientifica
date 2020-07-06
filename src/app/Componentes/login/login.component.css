@@ -92,24 +92,3 @@ button:hover span
     max-width: 7rem;
     color: whitesmoke;
 }
-
-/*button::after
-{
-    background-color: #b6ff00;
-
-    content: "";
-    height: 40px; 
-    left: 393px; 
-    top: 442px;
-    border-radius: 3px;
-    width: 0;  
-    position: absolute; 
-    transition: all 0.3s ease 0s; 
-    -webkit-transition: all 0.3s ease 0s; 
-    z-index: 1;
-}
-
-button:hover::after
-{
-    width: 69px;
-}*/

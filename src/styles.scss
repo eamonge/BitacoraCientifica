@@ -17,41 +17,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    #container {
-        background-color: pink;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #container {
-    background-color: pink;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #container {
-    background-color: pink;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #container {
-    background-color: pink;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #container {
-    background-color: pink;
-  }
-}
-
 
 .btn-primary {
   color: #fff;
@@ -93,7 +58,7 @@ nav
 }
 
 h1 {
-  color: white;
+  // color: white;
   font-family: 'Jost', sans-serif;
 }
 
@@ -212,6 +177,7 @@ label {
     position: absolute;
     top: -20px;
     background-color: #2D3035;
+    color: white;
     margin-left: 10px;
     padding: 0px 5px 0px 5px;
     font-size: 27pt;
@@ -236,6 +202,23 @@ input[type="text"] {
   margin-right: 5px;
   box-shadow: none;
   outline: none;
+}
+
+input[type="password"] {
+  background-color: #2D3035;
+  border: none;
+  border-bottom: solid 1px #EF473A;
+  display: inline;
+  width: 50%;
+  color: white;
+}
+
+input[type="password"]:focus
+{
+    box-shadow: none;
+    outline: none;
+    background-color: #2D3035;
+    color: white;
 }
 
 input[type="text"]:focus
@@ -326,5 +309,9 @@ input[type="date"]:read-only {
 
 input[type="date"]:read-only::placeholder {
     color: white;
+}
+
+.form-group {
+  margin-top: 25px;
 }
 /*Inputs*/
