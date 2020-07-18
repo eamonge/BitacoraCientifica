@@ -4,29 +4,34 @@
       <div class="row" style="width:50%; float: left; margin-right: 0px;">
         <div class="col">
           <h1 class="display-4 sectionTitle">Información</h1>
-          <form>
+          <form [formGroup]="FormularioRoles" (ngSubmit)="InsertarRol()">
             <div class="form-group">
               <div class="row">
                 <label>Código rol</label>
-                <input type="text" class="form-control" readonly placeholder="Código"/>
+                <input type="text" class="form-control" placeholder="Código" formControlName="bcRolId"/>
               </div>
               <div class="row">
                 <label>Nombre</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" formControlName="nombre"/>
               </div>
               <div class="row">
                 <label style="float: left; margin-right: 5px;">Detalle</label>
-                <textarea class="form-control txtarea" rows="5" id="comment"></textarea>
+                <input class="form-control txtarea" rows="5" id="comment" formControlName="detalle"/>
               </div>  
               <!--<br />-->
               <div class="row">
-                <button class="btn" style="width: 100%; margin: 5px 0px 5px 0px;"><i class="fas fa-eraser"></i></button>
-                <button class="btn"><i class="fas fa-plus"></i></button>
-                <button class="btn"><i class="fas fa-sync"></i></button>
+                
+                <button class="btn" [disabled]="FormularioRoles.invalid"><i class="fas fa-plus"></i></button>
+               
+                <button type="button" class="btn" style="width: 100%; margin: 5px 0px 5px 0px;" (click)="BorrarRolActual()" ><i class="fas fa-eraser"></i></button>
+               
               </div>              
             </div>
           </form>
+          
         </div>
+
+
         <!--<div class="col tables">
       <table class="table">
         <thead>
@@ -63,22 +68,13 @@
                 <th>Detalle</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody *ngFor="let rolesActuales of ListaRoles">
               <tr>
-                <td>Row 1- A</td>
-                <td>A</td>
-                <td>A</td>
+                <td>{{rolesActuales.bcRolId}}</td>
+                <td>{{rolesActuales.nombre}}</td>
+                <td>{{rolesActuales.detalle}}</td>
               </tr>
-              <tr>
-                <td>Row 2- A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Row 3- A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
+             
             </tbody>
           </table>
         </div>
@@ -86,15 +82,15 @@
       <div id="Bottom" class="row">
         <h1 class="display-4 sectionTitle">Búsqueda</h1>
         <div class="col">
-          <form>
+          <form [formGroup]="FormularioBuscaRol" (ngSubmit)="BuscarRole()">
             <div class="form-group">
               <div class="row">
                 <label>Código</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" formControlName="bcRolId"/>
               </div>
               <div class="row">
-                <label>Nombre</label>
-                <input type="text" class="form-control" />
+                <button type="button" class="btn" style="width: 100%; margin: 5px 0px 5px 0px;" (click)="BuscarRole()"><i class="fas fa-search"></i></button>
+               
               </div>
             </div>
           </form>

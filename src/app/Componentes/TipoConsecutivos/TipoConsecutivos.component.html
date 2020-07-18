@@ -1,0 +1,47 @@
+<div id="wrapper">
+    <div id="container">
+      <div class="container">
+        <div id="LeftSide" class="row">
+          <div class="col">
+            <h1 class="display-4 sectionTitle">Nuevo Tipo de Consecutivo</h1>
+            
+            <form [formGroup]="FomularioTipoConsecutivo" (ngSubmit)="InsertarTipoConsecutivo()">
+              <div class="form-group">
+                <label>Tipo de consecutivo</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="Unicamente Numeros" formControlName="NumeroConsecutivo">
+                  
+                </div>
+                <br />
+                <label>Descripción</label>
+                <input type="text" class="form-control" placeholder="Colocar una descripcion" formControlName="DescripcionConsecutivo" />
+               
+                <div class="row">
+                  <button style="margin-left: 168px;" class="btn" [disabled]="FomularioTipoConsecutivo.invalid"><i class="fas fa-plus"></i></button>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+          <div style="padding: 8px;" class="col">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Tipo de Consecutivo</th>
+                    <th>Descripcion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ListadoTipoConsecutivos of ListaTiposConsecutivos">
+                    <td>{{ListadoTipoConsecutivos.bcTipoConsecutivoId}}</td>
+                    <td>{{ListadoTipoConsecutivos.descripcion}}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  

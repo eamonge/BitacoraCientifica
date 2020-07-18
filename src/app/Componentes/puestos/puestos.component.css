@@ -93,3 +93,24 @@ input:read-only {
     padding: 20px;
     border: solid 1px #808080;
 }*/
+.input-group {
+    width: 50%;
+}
+
+.input-group:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.input-group:active {
+    outline: none;
+    box-shadow: none;
+}
+
+option {
+    color: white;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+}

@@ -4,32 +4,30 @@
             <div class="row">
                 <div class="col">
                     <div class="display-4 sectionTitle">Información</div>
-                    <form>
+                    <form [formGroup]="FormularioAddNivelAcademico" (ngSubmit)="InsertarUnNivelAcademico()">
                         <div class="form-group">
                             <label>Código</label>
-                            <input type="text" class="form-control" readonly>
+                            <input type="text" class="form-control" formControlName="bcNivelAcademicoId">
                             <br>
                             <label>Detalle</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" formControlName="nombre">
                             <br>
                             <label>Nivel Académico</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" formControlName="detalle">
                             <br>
-                            <button type="button" class="btn">Borrar</button>
+                            <button type="submit" class="btn" [disabled]="FormularioAddNivelAcademico.invalid">Añadir</button>
+                            <button type="button" class="btn" (click)="BorrarUnNivelAcademico()">Borrar</button>
                         </div>
                     </form>
                 </div>
                 <div class="col">
                     <div class="display-4 sectionTitle">Búsqueda</div>
-                    <form>
+                    <form [formGroup]="FomularioBusquedaNivelAcademico" (ngSubmit)="BuscarUnNivelAcademico()">
                         <div class="form-group">
                             <label>Código</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" formControlName="bcNivelAcademicoId">
                             <br>
-                            <label>Nivel Académico</label>
-                            <input type="text" class="form-control">
-                            <br>
-                            <button type="button" class="btn">Borrar</button>
+                            <button type="submit" class="btn" [disabled]="FomularioBusquedaNivelAcademico.invalid">Buscar</button>
                         </div>
                     </form>
                 </div>
@@ -45,21 +43,12 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Row 1- A</td>
-                        <td>A</td>
-                        <td>A</td>
+                      <tr *ngFor="let nivelesAcademicos of ListaNivelesAcademicos">
+                        <td>{{nivelesAcademicos.bcNivelAcademicoId}}</td>
+                        <td>{{nivelesAcademicos.nombre}}</td>
+                        <td>{{nivelesAcademicos.detalle}}</td>
                       </tr>
-                      <tr>
-                        <td>Row 2- A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Row 3- A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
+                    
                     </tbody>
                   </table>
                 </div>

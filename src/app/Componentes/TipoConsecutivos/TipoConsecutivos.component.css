@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+select {
+  background-color: #2D3035;
+  border: none;
+  color: white;
+  border-bottom: solid 2px red;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label {
+  float: left;
+  width: 145px;
+}
+
+.input-group {
+    width: 50%;
+}
+
+.input-group:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.input-group:active {
+    outline: none;
+    box-shadow: none;
+}
+
+option {
+    color: white;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+}
+
