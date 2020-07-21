@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
@@ -23,7 +23,8 @@ import { BitacoraComponent } from './Componentes/bitacora/bitacora.component';
 import { ErroresComponent } from './Componentes/errores/errores.component';
 import { BitacoraExperimentalComponent } from './Componentes/bitacora-experimental/bitacora-experimental.component';
 import { UserBarComponent } from './Componentes/user-bar/user-bar.component';
-import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
+import { NivelAcademicoComponent } from './Componentes/nivel-academico/nivel-academico.component';
+import {TipoConsecutivosComponent} from './Componentes/TipoConsecutivos/TipoConsecutivos.component';
 
 @NgModule({
   declarations: [
@@ -46,12 +47,14 @@ import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.compo
     ErroresComponent,
     BitacoraExperimentalComponent,
     UserBarComponent,
-    NivelAcademicoComponent
+    NivelAcademicoComponent,
+    TipoConsecutivosComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule, 
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },

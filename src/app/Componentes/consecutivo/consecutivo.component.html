@@ -4,39 +4,60 @@
       <div id="LeftSide" class="row">
         <div class="col">
           <h1 class="display-4 sectionTitle">Información</h1>
-          <form>
+          <form [formGroup]="FomularioConsecutivo" (ngSubmit)="InsertarConsecutivo()">
             <div class="form-group">
               <label>Tipo de consecutivo</label>
               <div class="input-group">
-                <select class="custom-select" id="inputGroupSelect01">
-                  <option selected><span>Proyectos</span></option>
-                  <option value="1"><span>One</span></option>
-                  <option value="2"><span>Two</span></option>
-                  <option value="3"><span>Three</span></option>
+                <select class="custom-select" id="inputGroupSelect01" formControlName="bcTipoConsecutivoId">
+                  <option *ngFor="let tipoConsecutivos of ListaTiposConsecutivos" [ngValue]="tipoConsecutivos.bcTipoConsecutivoId"><span>{{tipoConsecutivos.descripcion}}</span></option>
+                 
                 </select>
               </div>
               <br />
               <label>Descripción</label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control" formControlName="Descripcion"/>
               <label>Valor consecutivo</label>
-              <input type="text" class="form-control" />
+              <input type="number" class="form-control" formControlName="ValorConsecutivo"/>
               <section>
                 <input style="float: left; margin: 5px 5px 0px 0px;" type="radio" />
                 <label style="width: 126px;">Posee prefijo</label>
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" formControlName="Prefijo"/>
               </section>
               <div class="row">
-                <button style="margin-left: 125px;" class="btn"><i class="fas fa-plus"></i></button>
-                <button class="btn"><i class="fas fa-sync"></i></button>
-                <button class="btn"><i class="fas fa-eraser"></i></button>
+                <button style="margin-left: 125px;" class="btn" [disabled]="FomularioConsecutivo.invalid"><i class="fas fa-plus"></i></button>
+                
+                
               </div>
             </div>
           </form>
         </div>
-        <div style="padding: 10px;" class="col">
+        <div class="row" style="width: 50%;">
+          <div class="col">
+            <h1 class="display-4 sectionTitle">Búsqueda</h1>
+            <form [formGroup]="FormularioSearchConsecutivp" (ngSubmit)="BuscarConsecutivo()">
+              <div class="form-group" style="margin-left: 5px;">
+                <label style="width: 220px;">Código del tipo de consecutivo</label>
+                <input type="number" class="form-control" style="width: 45%;"  formControlName="bcTipoConsecutivoIdSearch" />
+                <br>
+                <button class="btn" [disabled]="FormularioSearchConsecutivp.invalid"><i class="fas fa-search"></i></button>
+                
+              </div>
+            </form>
+            <form [formGroup]="FormularioDeleteConsecutivp" (ngSubmit)="DeleteConsecutivo()">
+              <div class="form-group" style="margin-left: 5px;">
+                <label style="width: 220px;">Código del tipo de consecutivo</label>
+                <input type="number" class="form-control" style="width: 45%;"  formControlName="bcTipoConsecutivoIdDelete" />
+                <br>
+                <button class="btn" [disabled]="FormularioDeleteConsecutivp.invalid"><i class="fas fa-eraser"></i></button>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+        <div style="padding: 10px;" class="col" >
           <table class="table">
-            <thead>
-              <tr>
+            <thead >
+              <tr >
                 <th>Código</th>
                 <th>Tipo</th>
                 <th>Descripción</th>
@@ -45,44 +66,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Row 1- A</td>
-                <td>A</td>
-                <td>A</td>
-                <td>A</td>
-                <td>A</td>
+              <tr *ngFor="let consecutivos of ListaSoloConsecutivos">
+                <td>{{consecutivos.bcConsecutivoId}}</td>
+                <td>{{consecutivos.descripcionTipoConsecutivo}}</td>
+                <td>{{consecutivos.descripcion}}</td>
+                <td>{{consecutivos.valor}}</td>
+                <td>{{consecutivos.prefijo}}</td>
               </tr>
-              <tr>
-                <td>Row 2- A</td>
-                <td>A</td>
-                <td>A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Row 3- A</td>
-                <td>A</td>
-                <td>A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
       </div>
-      <div class="row" style="width: 50%;">
-        <div class="col">
-          <h1 class="display-4 sectionTitle">Búsqueda</h1>
-          <form>
-            <div class="form-group" style="margin-left: 5px;">
-              <label style="width: 220px;">Código del tipo de consecutivo</label>
-              <input type="text" class="form-control" style="width: 45%;" />
-              <label style="width: 220px;">Nombre del tipo de consecutivo</label>
-              <input type="text" class="form-control" style="width: 45%;" />
-            </div>
-          </form>
-        </div>
-      </div>
+     
     </div>
   </div>
 </div>

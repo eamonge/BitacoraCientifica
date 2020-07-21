@@ -4,36 +4,35 @@
       <div class="row">
         <div class="col">
           <h1 class="display-4 sectionTitle">Información</h1>
-          <form>
+          <form [formGroup]="FormularioPuestos" (ngSubmit)="InsertarUnPuesto()">
             <div class="form-group">
               <label>Código</label>
-              <input type="text" class="form-control" readonly />
+              <input type="text" class="form-control" formControlName="bcPuestoId"/>
               <br />
               <label>Nombre</label>
-              <input type="text" class="form-control" />
+              <input type="text" class="form-control" formControlName="detalle"/>
               <br />
               <label>Rol en el laboratorio</label>
-              <input type="text" class="form-control" />
-              <button class="btn" style="width: 100%; margin-top: 5px"><i class="fas fa-eraser"></i></button>
+              <select class="form-control col-md-6" style="margin-left: 4.1cm; background-color: black;" formControlName="bcRolId">
+                <option *ngFor="let rolActual of ListaRolesCodigo" [ngValue]="rolActual.bcRolId">{{rolActual.bcRolId}}</option>
+              </select>
+              <br>
+              
             </div>
+            <button class="btn" style="width: 100%; margin-top: 5px" [disabled]="FormularioPuestos.invalid"><i class="fas fa-plus"></i></button>
           </form>
         </div>
         <div class="col">
           <h1 class="display-4 sectionTitle">Búsqueda</h1>
-          <form>
+          <form [formGroup]="FomularioBusquedaPuesto" (ngSubmit)="BuscarUnPuesto()">
             <div class="form-group">
-              <label>Código del puesto</label>
-              <input type="text" class="form-control" />
               <label>Nombre del puesto</label>
-              <input type="text" class="form-control" />
-              <button class="btn"><i class="fas fa-search"></i></button>
-              <button class="btn"><i class="fas fa-eraser"></i></button>
-              <button class="btn"><i class="fas fa-sync"></i></button>
-              <!--<button id="SearchBtn" class="btn" style="margin-top: 5px"></button>
-  <button class="btn"></button>
-  <button class="btn"></button>-->
+              <input type="text" class="form-control" formControlName="bcPuestoId"/>
+              <button class="btn" [disabled]="FomularioBusquedaPuesto.invalid"><i class="fas fa-search" ></i></button>
+              
             </div>
           </form>
+          <button class="btn" (click)="BorrarUnPuesto()"><i class="fas fa-eraser"></i></button>
         </div>
       </div>
       <div class="row">
@@ -46,22 +45,13 @@
                 <th>Rol</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Row 1- A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Row 2- A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Row 3- A</td>
-                <td>A</td>
-                <td>A</td>
-              </tr>
+            <tbody >
+              <tr *ngFor="let puestosInfo of ListaPuestos">
+                <td>{{puestosInfo.bcPuestoId}}</td>
+                <td>{{puestosInfo.detalle}}</td>
+                <td>{{puestosInfo.bcRolId}}</td>
+              </tr>5
+             
             </tbody>
           </table>
         </div>

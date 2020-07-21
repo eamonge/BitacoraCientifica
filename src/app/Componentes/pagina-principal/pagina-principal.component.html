@@ -2,15 +2,21 @@
   <div id="container" class="container">
     <div class="row">
       <div class="col">
-        <h1 class="display-4 sectionTitle">Title</h1>
-        <form>
+        <h1 class="display-4 sectionTitle">Proyectos</h1>
+        <form [formGroup]="FormularioProyectos" (ngSubmit)="InsertProyecto()">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Código" />
-            <button class="btn">AAA</button>
+            <input type="text" class="form-control" placeholder="Código" formControlName="bcProyectoId"/>
+            
             <br />
-            <input type="text" class="form-control" placeholder="Nombre" />
-            <button class="btn">ABC</button>
-
+            <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre"/>
+            
+            <br>
+            <select class="form-control col-md-3" style="margin-left: 0.1cm; background-color: black;" formControlName="bcRamaCientificaId">
+              <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option>
+            </select>
+            <br>
+            <button class="btn" [disabled]="FormularioProyectos.invalid">Añadir</button>
+            <button class="btn" (click)="DeleteProyecto()">Borrar</button>
           </div>
         </form>
       </div>
@@ -28,23 +34,18 @@
         <table class="table">
           <thead>
             <tr>
-              <th>Código</th>
+              <th>Rama Cientifica</th>
+              <th>Codigo</th>
               <th>Proyecto</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Row 1- A</td>
-              <td>A</td>
+            <tr *ngFor="let proyectoActual of ListaProyectos">
+              <td>{{proyectoActual.bcRamaCientificaId}}</td>
+              <td>{{proyectoActual.bcProyectoId}}</td>
+              <td>{{proyectoActual.nombre}}</td>
             </tr>
-            <tr>
-              <td>Row 2- A</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>Row 3- A</td>
-              <td>A</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>

@@ -14,7 +14,8 @@ import { UsuariosComponent } from './Componentes/usuarios/usuarios.component';
 import { BitacoraComponent } from './Componentes/bitacora/bitacora.component';
 import { ErroresComponent } from './Componentes/errores/errores.component';
 import { BitacoraExperimentalComponent } from './Componentes/bitacora-experimental/bitacora-experimental.component';
-import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
+import { NivelAcademicoComponent } from './Componentes/nivel-academico/nivel-academico.component';
+import { TipoConsecutivosComponent } from './Componentes/TipoConsecutivos/TipoConsecutivos.component';
 
 const routes: Routes = [
   { path: 'main', component: PaginaPrincipalComponent },
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'bitacora', component: BitacoraComponent },
   { path: 'errores', component: ErroresComponent },
   { path: 'bitacora_experimental', component: BitacoraExperimentalComponent},
-  { path: 'nivel_academico', component: NivelAcademicoComponent }
+  { path: 'nivel_academico', component: NivelAcademicoComponent },
+  { path: 'TiposConsecutivos',component:TipoConsecutivosComponent}
 ]
 
 
