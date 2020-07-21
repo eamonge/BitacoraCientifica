@@ -1,131 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-
-#container
-{
-    text-align: center;
-    height: 450px;
+#container {
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  width: 100%;
+  text-align: center;
 }
 
-
-img {
-  background-color: #303E3C;
+.btn {
+  padding: 5px;
 }
 
-.maincnt h1 {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#cb2d3e, #ef473a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Jost', sans-serif;
-  margin-bottom: 0;
-  margin-top: 100px;
-}
-
-h3 {
-  font-family: 'Jost', sans-serif;
-  background: -webkit-linear-gradient(#cb2d3e, #ef473a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-section
-{
-    position: absolute;
-    width: 100%;
-    margin-top: 12%;
-    height: auto;
-}
-
-.CntLogin label {
-  font-size: 32pt;
-  /* color: #2D3035; */
-  color: white;
-  width: 230px;
-}
-
-.CntLogin
-{
-  margin: 0px 25% 0px 25%;
-  background: #cb2d3e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 50%;
-}
-
-.CntLogin h1 {
-  /* color: #2D3035; */
-  color: white;
-}
-
-#LoginPanel {
-  margin-top: 80px;
-  /* background-color: ; */
-  border: solid 2px #2D3035;
-  width: 50%;
-  /* height: ; */
+.col-md-6 {
   margin-left: 25%;
-  border-radius: 10px;
-}
-
-input[type="text"]{
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  border-bottom: solid 2px #2D3035;
-  font-size: 16pt;
-  /* color: #2D3035; */
-  color: white;
-}
-
-input[type="password"]{
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  border-bottom: solid 2px #2D3035;
-  font-size: 16pt;
-  /* color: #2D3035; */
-  color: white;
-}
-
-button span
-{
-    max-width: 0;
-  -webkit-transition: max-width 1s;
-  transition: max-width 1s;
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-
-}
-
-.fas
-{
-    margin-right: 10px;
-}
-
-button
-{
-    position: relative;
-    background: #2D3035;
-    margin: 5px;
-    color: whitesmoke;
-    width: auto;
-}
-
-button:hover
-{
-    color: whitesmoke;
-}
-
-button:hover span
-{
-    max-width: 7rem;
-    color: whitesmoke;
-}
-
-button:active {
-    background-color: #2D3035!important;
-}
-
-button:focus {
-  background-color: #2D3035!important;
+  margin-right: 25%;
+  margin-top: 100px;
+  
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to left, #ef473a, #cb2d3e);
+  background: linear-gradient(to left, #ef473a, #cb2d3e);
+  text-align: center;
 }

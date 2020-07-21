@@ -13,3 +13,24 @@ input {
 .form-group {
     margin-top: 20px;
 }
+
+select {
+  display: flex;
+  margin-left: 0.1cm;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px red;
+}
+
+select:focus {
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  box-shadow: none;
+  border: solid 1px red;
+}
+
+select:active {
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  box-shadow: none;
+  border: solid 1px red;
+}

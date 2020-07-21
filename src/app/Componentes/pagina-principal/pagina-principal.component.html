@@ -11,7 +11,7 @@
             <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre"/>
             
             <br>
-            <select class="form-control col-md-3" style="margin-left: 0.1cm; background-color: black;" formControlName="bcRamaCientificaId">
+            <select class="form-control col-md-3" formControlName="bcRamaCientificaId">
               <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option>
             </select>
             <br>
