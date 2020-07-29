@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { LoginModel } from 'src/app/ServiciosAPI/Modelos/Login';
 import { NavigationMenuComponent } from '../navigation-menu/navigation-menu.component'
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -20,17 +21,25 @@ export class HomeComponent {
 
     
 
-  constructor(private formbuilder:FormBuilder) {
+  constructor(private formbuilder:FormBuilder,public translate:TranslateService) {
 
     this.formbuilder.group({
 
       user:['',Validators.required],
       pass:['',Validators.required]
 
-    })
-
+    });
+    translate.addLangs(['en','es','fr']);
+    translate.setDefaultLang('es');
+    
   }
-  
+    useLanguage(language:string){
+      this.translate.use(language);
+    }
+
+
+
+
   MakeLogin(){
 
     if (this.inicio === 'IniciaSesion') {

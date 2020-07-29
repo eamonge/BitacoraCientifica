@@ -1,0 +1,21 @@
+{
+    "btnBorrar":"Delete",
+    "btnAñadir":"Add",
+    "BuscarRama":"find branch",
+    "Nombre":"Name",
+    "Inicio":"Begin",
+    "Proyectos":"Projects",
+    "RamaCientifica":"Science Sector",
+    "TiposConsecutivos":"Types of Consecutive",
+    "Consecutivos":"Consecutives",
+    "Roles":"Rols",
+    "Puestos":"Posts",
+    "Usuarios":"Users",
+    "Bitacora":"Logs",
+    "Errores":"Errors",
+    "BitacorasExperimentales":"Experimental Log",
+    "Invitado":"Guest",
+    "Codigo":"Code",
+    "AgregarRamaCientifica":"add scientific branch",
+    "Bienvenidos":"Welcome to the Scientific Logbook app"
+}

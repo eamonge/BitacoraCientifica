@@ -3,24 +3,24 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="display-4 sectionTitle">Agregar Rama Cientifica</h1>
+          <h1 class="display-4 sectionTitle">{{ 'AgregarRamaCientifica' | translate }}</h1>
           <form [formGroup]="FormularioRamasCientificas" (ngSubmit)="InsertRamaCientifica()">
             <div class="form-group">
-              <label>Código</label>
-              <input type="text" class="form-control" placeholder="Código" formControlName="codigoRama"/>
+              <label>{{ 'Codigo' | translate }}</label>
+              <input type="text" class="form-control" formControlName="codigoRama"/>
               <br />
-              <label>Nombre</label>
-              <input type="text" class="form-control" placeholder="Nombre" formControlName="nombreRama"/>
+              <label>{{ 'Nombre' | translate }}</label>
+              <input type="text" class="form-control" formControlName="nombreRama"/>
               <button class="btn" data-toggle="tooltip" data-placement="right" title="Insertar" [disabled]="FormularioRamasCientificas.invalid"><i class="fas fa-plus"></i></button>
             </div>
           </form>
         </div>
         <div class="col">
-          <h1 class="display-4 sectionTitle">Buscar Rama</h1>
+          <h1 class="display-4 sectionTitle">{{ 'BuscarRama' | translate }}</h1>
           <form [formGroup]="FormularioBuscador" (ngSubmit)="BuscarRamaCientifica()">
             <div class="form-group">
-              <label>Código</label>
-              <input type="text" class="form-control" placeholder="Código" formControlName="SearchcodigoRama" />
+              <label>{{ 'Codigo' | translate }}</label>
+              <input type="text" class="form-control" formControlName="SearchcodigoRama" />
               <button class="btn" data-toggle="tooltip" data-placement="right" title="Buscar" [disabled]="FormularioBuscador.invalid"><i class="fas fa-search"></i></button>
               <br />
               

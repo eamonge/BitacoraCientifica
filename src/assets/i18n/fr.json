@@ -1,0 +1,21 @@
+{
+    "btnBorrar":"supprimer",
+    "btnAñadir":"Ajouter",
+    "BuscarRama":"trouver une succursale",
+    "Nombre":"Nom",
+    "Inicio":"début",
+    "Proyectos":"Projets",
+    "RamaCientifica":"branche scientifique",
+    "TiposConsecutivos":"Types de consécutifs",
+    "Consecutivos":"consécutif",
+    "Roles":"les rôles",
+    "Puestos":"poster",
+    "Usuarios":"utilisateurs",
+    "Bitacora":"Habitacle",
+    "Errores":"erreurs",
+    "BitacorasExperimentales":"journal expérimental",
+    "Invitado":"Invite",
+    "Codigo":"Code",
+    "AgregarRamaCientifica":"ajouter une branche scientifique",
+    "Bienvenidos":"Bienvenue dans l'application Scientific Logbook"
+}

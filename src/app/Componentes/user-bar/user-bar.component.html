@@ -4,7 +4,23 @@
       <h1 class="lead"><i class="fas fa-sign-in-alt"></i></h1>
     </li>
     <li>
-      <h1 class="lead">Invitado<i class="fas fa-user-circle"></i></h1>
+      <select
+        class="form-control col-md-3"
+        #langSelect
+        (change)="OnChange(langSelect.value)"
+      >
+        <option
+          *ngFor="let lang of translate.getLangs()"
+          [value]="lang"
+          [selected]="lang === translate.currentLang"
+          >{{ lang }}</option
+        >
+      </select>
+    </li>
+    <li>
+      <h1 class="lead">
+        {{ "Invitado" | translate }}<i class="fas fa-user-circle"></i>
+      </h1>
     </li>
     <!--<li>
       <h1 class="lead">White Theme</h1>

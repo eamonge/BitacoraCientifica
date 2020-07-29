@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -25,7 +25,8 @@ import { BitacoraExperimentalComponent } from './Componentes/bitacora-experiment
 import { UserBarComponent } from './Componentes/user-bar/user-bar.component';
 import { NivelAcademicoComponent } from './Componentes/nivel-academico/nivel-academico.component';
 import {TipoConsecutivosComponent} from './Componentes/TipoConsecutivos/TipoConsecutivos.component';
-
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,9 +61,19 @@ import {TipoConsecutivosComponent} from './Componentes/TipoConsecutivos/TipoCons
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ]),
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule.forRoot({
+     loader:{
+       provide:TranslateLoader,
+       useFactory: HttpLoaderFactory,
+       deps:[HttpClient],
+     }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
+export function HttpLoaderFactory(http:HttpClient) {
+  return new TranslateHttpLoader(http);
+}

@@ -4,57 +4,57 @@
   <ul class="navbar-nav">
     <li routerLink="/home" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Inicio</a>
+        <a class="nav-link">{{ 'Inicio' | translate }}</a>
       </span>
     </li>
     <li routerLink="/main" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Proyectos</a>
+        <a class="nav-link">{{ 'Proyectos' | translate }}</a>
       </span>
     </li>
     <li routerLink="/rama_cientifica" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Rama científica</a>
+        <a class="nav-link">{{ 'RamaCientifica' | translate }}</a>
       </span>
     </li>
     <li routerLink="/TiposConsecutivos" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Tipo de Consecutivos</a>
+        <a class="nav-link">{{ 'TiposConsecutivos' | translate }}</a>
       </span>
     </li>
     <li routerLink="/consecutivos" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Consecutivos</a>
+        <a class="nav-link">{{ 'Consecutivos' | translate }}</a>
       </span>
     </li>
     <li routerLink="/roles" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Roles</a>
+        <a class="nav-link">{{ 'Roles' | translate }}</a>
       </span>
     </li>
     <li routerLink="/puestos" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Puestos</a>
+        <a class="nav-link">{{ 'Puestos' | translate }}</a>
       </span>
     </li>
     <li routerLink="/usuarios" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Usuarios</a>
+        <a class="nav-link">{{ 'Usuarios' | translate }}</a>
       </span>
     </li>
     <li routerLink="/bitacora" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Bitácora</a>
+        <a class="nav-link">{{ 'Bitacora' | translate }}</a>
       </span>
     </li>
     <li routerLink="/errores" routerLinkActive="active" class="nav-item">
       <span>
-        <a class="nav-link">Errores</a>
+        <a class="nav-link">{{ 'Errores' | translate }}</a>
       </span>
     </li>
     <li routerLink="/bitacora_experimental" routerLinkActive="active" class="nav-item">
       <span>
-        <a style="font-size: 11pt" class="nav-link">Bitácora experimental</a>
+        <a style="font-size: 11pt" class="nav-link">{{ 'BitacorasExperimentales' | translate }}</a>
       </span>
     </li>
 
@@ -65,7 +65,7 @@
   </ul>
 </nav>
 <!-- Login Part. Descomntar para ver -->
-<!-- <div id="LoginDiv" class="jumbotron">
+ <div id="LoginDiv" class="jumbotron">
   <div class="col-md-6">
     <h1 class="display-4">Iniciar Sesión</h1>
     <hr>
@@ -79,12 +79,12 @@
         <input type="password" class="form-control">
       </div>
       <div class="form-group">
-        <button class="btn" (click)="Hide()">Iniciar Sesión</button>
+        <button class="btn" (click)="ngOnInit()">Iniciar Sesión</button>
       </div>
     </form>
   </div>
   
-</div> -->
+</div> 
 
 <!--<nav id="NavoBar" class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">Bitácora Científica</a>

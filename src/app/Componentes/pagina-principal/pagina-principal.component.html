@@ -2,21 +2,21 @@
   <div id="container" class="container">
     <div class="row">
       <div class="col">
-        <h1 class="display-4 sectionTitle">Proyectos</h1>
+        <h1 class="display-4 sectionTitle">{{ 'Proyectos' | translate }}</h1>
         <form [formGroup]="FormularioProyectos" (ngSubmit)="InsertProyecto()">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Código" formControlName="bcProyectoId"/>
+            <input type="text" class="form-control"  formControlName="bcProyectoId"/>
             
             <br />
-            <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre"/>
+            <input type="text" class="form-control" formControlName="nombre"/>
             
             <br>
             <select class="form-control col-md-3" formControlName="bcRamaCientificaId">
               <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option>
             </select>
             <br>
-            <button class="btn" [disabled]="FormularioProyectos.invalid">Añadir</button>
-            <button class="btn" (click)="DeleteProyecto()">Borrar</button>
+            <button class="btn" [disabled]="FormularioProyectos.invalid">{{ 'btnAñadir' | translate }}</button>
+            <button class="btn" (click)="DeleteProyecto()">{{ 'btnBorrar' | translate }}</button>
           </div>
         </form>
       </div>
@@ -34,9 +34,9 @@
         <table class="table">
           <thead>
             <tr>
-              <th>Rama Cientifica</th>
-              <th>Codigo</th>
-              <th>Proyecto</th>
+              <th>{{ 'RamaCientifica' | translate }}</th>
+              <th>{{ 'Codigo' | translate }}</th>
+              <th>{{ 'Proyectos' | translate }}</th>
             </tr>
           </thead>
           <tbody>

@@ -1,0 +1,22 @@
+{
+    "btnBorrar":"Borrar",
+    "btnAñadir":"Añadir",
+    "BuscarRama":"Buscar Rama",
+    "Nombre":"Nombre",
+    "Inicio":"Inicio",
+    "Proyectos":"Proyectos",
+    "RamaCientifica":"Rama Cientifica",
+    "TiposConsecutivos":"Tipos de Consecutivos",
+    "Consecutivos":"Consecutivos",
+    "Roles":"Roles",
+    "Puestos":"Puestos",
+    "Usuarios":"Usuarios",
+    "Bitacora":"Bitacora",
+    "Errores":"Errores",
+    "BitacorasExperimentales":"Bitacoras Experimentales",
+    "Invitado":"Invitado",
+    "Codigo":"Codigo",
+    "AgregarRamaCientifica":"Agregar Rama Cientifica",
+    "Bienvenidos":"Bienvenido a la app de Bitácoras Científicas"
+
+}
