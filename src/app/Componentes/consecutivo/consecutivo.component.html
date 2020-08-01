@@ -3,10 +3,10 @@
     <div class="container">
       <div id="LeftSide" class="row">
         <div class="col">
-          <h1 class="display-4 sectionTitle">Información</h1>
+          <h1 class="display-4 sectionTitle">{{ 'Informacion' | translate }}</h1>
           <form [formGroup]="FomularioConsecutivo" (ngSubmit)="InsertarConsecutivo()">
             <div class="form-group">
-              <label>Tipo de consecutivo</label>
+              <label>{{ 'TiposConsecutivos' | translate }}</label>
               <div class="input-group">
                 <select class="custom-select" id="inputGroupSelect01" formControlName="bcTipoConsecutivoId">
                   <option *ngFor="let tipoConsecutivos of ListaTiposConsecutivos" [ngValue]="tipoConsecutivos.bcTipoConsecutivoId"><span>{{tipoConsecutivos.descripcion}}</span></option>
@@ -14,13 +14,13 @@
                 </select>
               </div>
               <br />
-              <label>Descripción</label>
+              <label>{{ 'Descripcion' | translate }}</label>
               <input type="text" class="form-control" formControlName="Descripcion"/>
-              <label>Valor consecutivo</label>
+              <label>{{ 'TiposConsecutivos' | translate }}</label>
               <input type="number" class="form-control" formControlName="ValorConsecutivo"/>
               <section>
                 <input style="float: left; margin: 5px 5px 0px 0px;" type="checkbox" />
-                <label style="width: 126px;">Posee prefijo</label>
+                <label style="width: 126px;">{{ 'Descripcion' | translate }}</label>
                 <input type="text" class="form-control" formControlName="Prefijo"/>
               </section>
               <div class="row">
@@ -33,10 +33,10 @@
         </div>
         <div class="row" style="width: 50%;">
           <div class="col">
-            <h1 class="display-4 sectionTitle">Búsqueda</h1>
+            <h1 class="display-4 sectionTitle">{{ 'Busqueda' | translate }}</h1>
             <form [formGroup]="FormularioSearchConsecutivp" (ngSubmit)="BuscarConsecutivo()">
               <div class="form-group" style="margin-left: 5px;">
-                <label style="width: 220px;">Código del tipo de consecutivo</label>
+                <label style="width: 220px;">{{ 'CodigoDelConsecutivo' | translate }}</label>
                 <input type="number" class="form-control" style="width: 45%;"  formControlName="bcTipoConsecutivoIdSearch" />
                 <br>
                 <button class="btn" [disabled]="FormularioSearchConsecutivp.invalid"><i class="fas fa-search"></i></button>
@@ -45,7 +45,7 @@
             </form>
             <form [formGroup]="FormularioDeleteConsecutivp" (ngSubmit)="DeleteConsecutivo()">
               <div class="form-group" style="margin-left: 5px;">
-                <label style="width: 220px;">Código del tipo de consecutivo</label>
+                <label style="width: 220px;">{{ 'CodigoDelTipoDeConsecutivo' | translate }}</label>
                 <input type="number" class="form-control" style="width: 45%;"  formControlName="bcTipoConsecutivoIdDelete" />
                 <br>
                 <button class="btn" [disabled]="FormularioDeleteConsecutivp.invalid"><i class="fas fa-eraser"></i></button>
@@ -58,11 +58,11 @@
           <table class="table">
             <thead >
               <tr >
-                <th>Código</th>
-                <th>Tipo</th>
-                <th>Descripción</th>
-                <th>Valor</th>
-                <th>Prefijo</th>
+                <th>{{ 'Codigo' | translate }}</th>
+                <th>{{ 'Tipo' | translate }}</th>
+                <th>{{ 'Descripcion' | translate }}</th>
+                <th>{{ 'Valor' | translate }}</th>
+                <th>{{ 'Prefijo' | translate }}</th>
               </tr>
             </thead>
             <tbody>

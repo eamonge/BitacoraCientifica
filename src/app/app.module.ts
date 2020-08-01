@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './Componentes/nav-menu/nav-menu.component';
 import { HomeComponent } from './Componentes/home/home.component';
-import { CounterComponent } from './Componentes/counter/counter.component';
-import { FetchDataComponent } from './Componentes/fetch-data/fetch-data.component';
 import { NavigationMenuComponent } from './Componentes/navigation-menu/navigation-menu.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { LoginComponent } from './Componentes/login/login.component';
@@ -32,8 +30,6 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     NavigationMenuComponent,
     routingComponents,
     LoginComponent,
@@ -58,8 +54,6 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
     ]),
     AppRoutingModule,
     TranslateModule.forRoot({

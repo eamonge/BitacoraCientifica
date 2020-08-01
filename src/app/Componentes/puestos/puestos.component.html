@@ -3,16 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="display-4 sectionTitle">Información</h1>
+          <h1 class="display-4 sectionTitle">{{ 'Informacion' | translate }}</h1>
           <form [formGroup]="FormularioPuestos" (ngSubmit)="InsertarUnPuesto()">
             <div class="form-group">
-              <label>Código</label>
+              <label>{{ 'Codigo' | translate }}</label>
               <input type="text" class="form-control" formControlName="bcPuestoId"/>
               <br />
-              <label>Nombre</label>
+              <label>{{ 'Nombre' | translate }}</label>
               <input type="text" class="form-control" formControlName="detalle"/>
               <br />
-              <label>Rol en el laboratorio</label>
+              <label>{{ 'RolEnElLaboratorio' | translate }}</label>
               <select class="form-control col-md-6" style="margin-left: 4.1cm; background-color: black;" formControlName="bcRolId">
                 <option *ngFor="let rolActual of ListaRolesCodigo" [ngValue]="rolActual.bcRolId">{{rolActual.bcRolId}}</option>
               </select>
@@ -23,10 +23,10 @@
           </form>
         </div>
         <div class="col">
-          <h1 class="display-4 sectionTitle">Búsqueda</h1>
+          <h1 class="display-4 sectionTitle">{{ 'Busqueda' | translate }}</h1>
           <form [formGroup]="FomularioBusquedaPuesto" (ngSubmit)="BuscarUnPuesto()">
             <div class="form-group">
-              <label>Nombre del puesto</label>
+              <label>{{ 'RolEnElLaboratorio' | translate }}</label>
               <input type="text" class="form-control" formControlName="bcPuestoId"/>
               <button class="btn" [disabled]="FomularioBusquedaPuesto.invalid"><i class="fas fa-search" ></i></button>
               
@@ -40,9 +40,9 @@
           <table class="table">
             <thead>
               <tr>
-                <th>Código</th>
-                <th>Detalle</th>
-                <th>Rol</th>
+                <th>{{ 'Codigo' | translate }}</th>
+                <th>{{ 'Detalle' | translate }}</th>
+                <th>{{ 'Roles' | translate }}</th>
               </tr>
             </thead>
             <tbody >

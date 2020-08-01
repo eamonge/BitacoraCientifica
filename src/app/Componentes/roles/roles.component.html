@@ -3,19 +3,19 @@
     <div class="container">
       <div class="row" style="width:50%; float: left; margin-right: 0px;">
         <div class="col">
-          <h1 class="display-4 sectionTitle">Información</h1>
+          <h1 class="display-4 sectionTitle">{{ 'Informacion' | translate }}</h1>
           <form [formGroup]="FormularioRoles" (ngSubmit)="InsertarRol()">
             <div class="form-group">
               <div class="row">
-                <label>Código rol</label>
+                <label>{{ 'CodigoRol' | translate }}</label>
                 <input type="text" class="form-control" placeholder="Código" formControlName="bcRolId" readonly/>
               </div>
               <div class="row">
-                <label>Nombre</label>
+                <label>{{ 'Nombre' | translate }}</label>
                 <input type="text" class="form-control" formControlName="nombre"/>
               </div>
               <div class="row">
-                <label style="float: left; margin-right: 5px;">Detalle</label>
+                <label style="float: left; margin-right: 5px;">{{ 'Detalle' | translate }}</label>
                 <input class="form-control txtarea" rows="5" id="comment" formControlName="detalle"/>
               </div>  
               <!--<br />-->
@@ -63,9 +63,9 @@
           <table class="table">
             <thead>
               <tr>
-                <th>Código</th>
-                <th>Nombre rol</th>
-                <th>Detalle</th>
+                <th>{{ 'Codigo' | translate }}</th>
+                <th>{{ 'NombreDelRol' | translate }}</th>
+                <th>{{ 'Detalle' | translate }}</th>
               </tr>
             </thead>
             <tbody *ngFor="let rolesActuales of ListaRoles">
@@ -80,12 +80,12 @@
         </div>
       </div>
       <div id="Bottom" class="row">
-        <h1 class="display-4 sectionTitle">Búsqueda</h1>
+        <h1 class="display-4 sectionTitle">{{ 'Busqueda' | translate }}</h1>
         <div class="col">
           <form [formGroup]="FormularioBuscaRol" (ngSubmit)="BuscarRole()">
             <div class="form-group">
               <div class="row">
-                <label>Código</label>
+                <label>{{ 'Codigo' | translate }}</label>
                 <input type="text" class="form-control" formControlName="bcRolId"/>
               </div>
               <div class="row">
