@@ -1,0 +1,36 @@
+hr {
+    border-top: solid 1px #23252A;
+}
+
+input[type="text"] {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: #2E3035;
+}
+
+input[type="password"] {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: #2E3035;
+    color: #ef473a;
+    border: none;
+}
+
+label {
+    color: #23252A;
+}
+
+.btn {
+    color: white;
+    width: 150px;
+    background-color: #23252A;
+    border: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #23252A;
+    border: none;
+}

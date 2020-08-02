@@ -1,0 +1,26 @@
+.btn {
+    width: 120px;
+    margin: 10px;
+}
+
+label {
+    width: 260px;
+}
+
+img {
+    width: 100px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #ef473a;
+    color: #ef473a;
+}
+
+textarea:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}

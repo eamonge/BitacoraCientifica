@@ -1,0 +1,12 @@
+label {
+    width: 310px;
+    /* margin-right: 10px; */
+}
+
+input[type="checkbox"] {
+    width: 30px;
+}
+
+.btn {
+    width: 100px;
+}

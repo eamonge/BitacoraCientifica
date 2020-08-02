@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #cb2d3e;
+}
+
+hr {
+    border-top: solid 2px #cb2d3e;
+}
+
+.btn {
+    width: auto;
+    /* color: #ef473a; */
+    /* color: #cb2d3e; */
+}

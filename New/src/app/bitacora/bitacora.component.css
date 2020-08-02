@@ -1,0 +1,18 @@
+label {
+    width: 310px;
+    /* margin-right: 10px; */
+}
+
+input[type="checkbox"] {
+    width: 30px;
+}
+
+.btn {
+    width: 100px;
+}
+
+input[type="date"] {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px #cb2d3e;
+    color: #cb2d3e;
+}

@@ -1,0 +1,72 @@
+<div id="PaginaPrincipDiv" class="row contentcols">
+    <div id="AppNavCol" class="col-md-2">
+        <app-navigation-menu></app-navigation-menu>
+    </div>
+    <div class="col-md-10">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="sectionTitle">Proyectos</h1>
+                    <div class="content-div">
+                        <form>
+                            <div class="form-group">
+                                <label for="" class="form-label">ID</label>
+                                <input type="text" class="form control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Nombre</label>
+                                <input type="text" class="form control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">List</label>
+                                <select class="form-control col-md-3 formSelector" formControlName="bcRamaCientificaId">
+                                  <!-- <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option> -->
+                                </select>
+                            </div>    
+                            <div class="form-group">
+                                <button class="btn">Add</button>
+                                <button class="btn">Delete</button>
+                            </div>                        
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <h1 class="sectionTitle">Title</h1>
+                    <div class="content-div">
+                        <div class="col-sm-6 tables">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Rama científica</th>
+                                        <th>Código</th>
+                                        <th>Proyectos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>A</td>
+                                        <td>A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-6 tables">
+                            <p>tavles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
