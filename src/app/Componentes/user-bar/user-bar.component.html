@@ -4,17 +4,9 @@
       <h1 class="lead"><i class="fas fa-sign-in-alt"></i></h1>
     </li>
     <li>
-      <select
-        class="form-control col-md-3"
-        #langSelect
-        (change)="OnChange(langSelect.value)"
-      >
-        <option
-          *ngFor="let lang of translate.getLangs()"
-          [value]="lang"
-          [selected]="lang === translate.currentLang"
-          >{{ lang }}</option
-        >
+      <select class="form-control col-md-10" #langSelect (change)="OnChange(langSelect.value)">
+        <option>--idioma--</option>
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang" >{{ lang }}</option>
       </select>
     </li>
     <li>

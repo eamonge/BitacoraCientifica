@@ -3,17 +3,17 @@
       <div class="container">
         <div id="LeftSide" class="row">
           <div class="col">
-            <h1 class="display-4 sectionTitle">Nuevo Tipo de Consecutivo</h1>
+            <h1 class="display-4 sectionTitle">{{ 'TiposConsecutivos' | translate }}</h1>
             
             <form [formGroup]="FomularioTipoConsecutivo" (ngSubmit)="InsertarTipoConsecutivo()">
               <div class="form-group">
-                <label>Tipo de consecutivo</label>
+                <label>{{ 'NuevoTipoConsecutivo' | translate }}</label>
                 <div class="input-group">
                   <input type="number" class="form-control" placeholder="Unicamente Numeros" formControlName="NumeroConsecutivo">
                   
                 </div>
                 <br />
-                <label>Descripción</label>
+                <label>{{ 'Descripcion' | translate }}</label>
                 <input type="text" class="form-control" placeholder="Colocar una descripcion" formControlName="DescripcionConsecutivo" />
                
                 <div class="row">
@@ -27,8 +27,8 @@
             <table class="table">
                 <thead>
                   <tr>
-                    <th>Tipo de Consecutivo</th>
-                    <th>Descripcion</th>
+                    <th>{{ 'TiposConsecutivos' | translate }}</th>
+                    <th>{{ 'Descripcion' | translate }}</th>
                   </tr>
                 </thead>
                 <tbody>

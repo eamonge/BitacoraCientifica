@@ -3,31 +3,31 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="display-4 sectionTitle">Información</div>
+                    <div class="display-4 sectionTitle">{{ 'Informacion' | translate }}</div>
                     <form [formGroup]="FormularioAddNivelAcademico" (ngSubmit)="InsertarUnNivelAcademico()">
                         <div class="form-group">
-                            <label>Código</label>
+                            <label>{{ 'Codigo' | translate }}</label>
                             <input type="text" class="form-control" formControlName="bcNivelAcademicoId">
                             <br>
-                            <label>Detalle</label>
+                            <label>{{ 'Detalle' | translate }}</label>
                             <input type="text" class="form-control" formControlName="nombre">
                             <br>
-                            <label>Nivel Académico</label>
+                            <label>{{ 'NivelAcademico' | translate }}</label>
                             <input type="text" class="form-control" formControlName="detalle">
                             <br>
-                            <button type="submit" class="btn" [disabled]="FormularioAddNivelAcademico.invalid">Añadir</button>
-                            <button type="button" class="btn" (click)="BorrarUnNivelAcademico()">Borrar</button>
+                            <button type="submit" class="btn" [disabled]="FormularioAddNivelAcademico.invalid">{{ 'btnAñadir' | translate }}</button>
+                            <button type="button" class="btn" (click)="BorrarUnNivelAcademico()">{{ 'btnBorrar' | translate }}</button>
                         </div>
                     </form>
                 </div>
                 <div class="col">
-                    <div class="display-4 sectionTitle">Búsqueda</div>
+                    <div class="display-4 sectionTitle">{{ 'Busqueda' | translate }}</div>
                     <form [formGroup]="FomularioBusquedaNivelAcademico" (ngSubmit)="BuscarUnNivelAcademico()">
                         <div class="form-group">
-                            <label>Código</label>
+                            <label>{{ 'Codigo' | translate }}</label>
                             <input type="text" class="form-control" formControlName="bcNivelAcademicoId">
                             <br>
-                            <button type="submit" class="btn" [disabled]="FomularioBusquedaNivelAcademico.invalid">Buscar</button>
+                            <button type="submit" class="btn" [disabled]="FomularioBusquedaNivelAcademico.invalid">{{ 'Busqueda' | translate }}</button>
                         </div>
                     </form>
                 </div>
@@ -37,9 +37,9 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Código</th>
-                        <th>Nivel Académico</th>
-                        <th>Detalle</th>
+                        <th>{{ 'Codigo' | translate }}</th>
+                        <th>{{ 'NivelAcademico' | translate }}</th>
+                        <th>{{ 'Detalle' | translate }}</th>
                       </tr>
                     </thead>
                     <tbody>
