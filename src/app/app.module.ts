@@ -27,6 +27,7 @@ import { NivelAcademicoComponent } from './Componentes/nivel-academico/nivel-aca
 import {TipoConsecutivosComponent} from './Componentes/TipoConsecutivos/TipoConsecutivos.component';
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +69,8 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
        useFactory: HttpLoaderFactory,
        deps:[HttpClient],
      }
-    })
+    }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
