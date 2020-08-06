@@ -6,73 +6,71 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="sectionTitle">Datos Personales</h1>
+                    <h1 class="sectionTitle">{{ 'DatosPersonales' | translate }}</h1>
                     <div class="content-div">
                         <form>
                             <div class="form-group">
-                                <label for="" class="form-label">Codigo</label>
+                                <label for="" class="form-label">{{ 'Codigo' | translate }}</label>
                                 <input type="text" class="form control" readonly>
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Nombre</label>
+                                <label for="" class="form-label">{{ 'Nombre' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Primer Apellido</label>
+                                <label for="" class="form-label">{{ 'PrimerApellido' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Segundo Apellido</label>
+                                <label for="" class="form-label">{{ 'SegundoApellido' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Telefono</label>
+                                <label for="" class="form-label">{{ 'Telefono' | translate }}</label>
                                 <input type="tel" class="form control">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="sectionTitle">Datos Técnicos</h1>
+                    <h1 class="sectionTitle">{{ 'DatosTecnicos' | translate }}</h1>
                     <div class="content-div">
                         <form>
                             <div class="form-group">
-                                <label for="" class="form-label">Login</label>
+                                <label for="" class="form-label">{{ 'Login' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Contraseña</label>
+                                <label for="" class="form-label">{{ 'Contraseña' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Confirmar contraseña</label>
+                                <label for="" class="form-label">{{ 'ConfirmarContraseña' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" class="form control">
-                                <label for="" class="form-label">Cambio de contraseña</label>
+                                <label for="" class="form-label">{{ 'CambioContraseña' | translate }}</label>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-6" style="margin-left: 25%; margin-right: 25%;">
-                                    <button class="btn">Ingresar</button>
-                                    <button class="btn">Cancelar</button>
+                                    <button class="btn">{{ 'Ingresar' | translate }}</button>
+                                    <button class="btn">{{ 'Cancelar' | translate }}</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-12" style="margin-bottom: 20px;">
-                    <h1 class="sectionTitle">Privilegios para el control del sistema</h1>
+                    <h1 class="sectionTitle">{{ 'PrivilegiosSistema' | translate }}</h1>
                     <div class="content-div">
                         <form>
                             <div class="form-group">
                                 <div class="col-md-8" style="margin: 20px; margin-left: 15%;">
                                     <input type="checkbox" class="form control">
-                                    <label for="" class="form-label" style="width: 300px;">Administrador del
-                                        sistema</label>
+                                    <label for="" class="form-label" style="width: 300px;">{{ 'AdminSistema' | translate }}</label>
                                     <input type="checkbox" class="form control">
-                                    <label for="" class="form-label" style="width: 300px;">Administrador de
-                                        seguridad</label>
+                                    <label for="" class="form-label" style="width: 300px;">{{ 'AdminSeguridad' | translate }}</label>
                                 </div>
                             </div>
                         </form>
@@ -83,22 +81,22 @@
                         <div class="col-lg-12" style="text-align: center; margin-top: 20px;">
                             <form>
                                 <div class="form-group">
-                                    <label for="" class="form-label" style="width: 185px;">Nivel académico</label>
+                                    <label for="" class="form-label" style="width: 185px;">{{ 'NivelAcademico' | translate }}</label>
                                     <select class="form-control col-md-3 formSelector" formControlName="bcRamaCientificaId" style="margin-right: 30px;">
                                         <!-- <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option> -->
                                     </select>
     
-                                    <label for="" class="form-label" style="width: 80px;">Puesto</label>
+                                    <label for="" class="form-label" style="width: 80px;">{{ 'Puestos' | translate }}</label>
                                     <select class="form-control col-md-3 formSelector" formControlName="bcRamaCientificaId">
                                         <!-- <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option> -->
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="" class="form-label" style="width: 185px;">Cargar firma</label>
+                                    <label for="" class="form-label" style="width: 185px;">{{ 'CargarFirma' | translate }}</label>
                                     <input type="text" class="form control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="" class="form-label" style="width: 185px;">Cargar foto</label>
+                                    <label for="" class="form-label" style="width: 185px;">{{ 'CargarFoto' | translate }}</label>
                                     <input type="text" class="form control">
                                 </div>
                                 <div class="col-md-12">
@@ -110,48 +108,48 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="sectionTitle">Búsqueda</h1>
+                    <h1 class="sectionTitle">{{ 'Busqueda' | translate }}</h1>
                     <div class="content-div">
                         <form>
                             <div class="form-group">
-                                <label for="" class="form-label">Código del usuario</label>
+                                <label for="" class="form-label">{{ 'CodigodelUsuario' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
-                                <label for="" class="form-label">Nombre del usuario</label>
+                                <label for="" class="form-label">{{ 'NombreUsuario' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="sectionTitle">Búsqueda</h1>
+                    <h1 class="sectionTitle">{{ 'Busqueda' | translate }}</h1>
                     <div class="content-div">
                         <form>
                             <div class="form-group">
-                                <label for="" class="form-label">Apodo</label>
+                                <label for="" class="form-label">{{ 'Apodo' | translate }}</label>
                                 <input type="text" class="form control">
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" class="form control">
-                                <label for="" class="form-label">Privilegios</label>
+                                <label for="" class="form-label">{{ 'Privilegios' | translate }}</label>
                             </div>
                         </form>
                 
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <h1 class="sectionTitle">Title</h1>
+                    <h1 class="sectionTitle">{{ 'Informacion' | translate }}</h1>
                     <div class="content-div">
                         <div class="col-sm-12 tables">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Código</th>
-                                        <th>Nombre</th>
-                                        <th>Primer Apellido</th>
-                                        <th>Segundo Apellido</th>
-                                        <th>Login</th>
+                                        <th>{{ 'Codigo' | translate }}</th>
+                                        <th>{{ 'Nombre' | translate }}</th>
+                                        <th>{{ 'PrimerApellido' | translate }}</th>
+                                        <th>{{ 'SegundoApellido' | translate }}</th>
+                                        <th>{{ 'Login' | translate }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -162,20 +160,7 @@
                                         <td>A</td>
                                         <td>A</td>
                                     </tr>
-                                    <tr>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                    </tr>
+                                  
                                 </tbody>
                             </table>
                         </div>
@@ -183,7 +168,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="content-div" style="padding: 20px;">
-                        <button routerLink="/nivel-academico" routerLinkActive="active" class="btn" style="width: 100%;">Nivel Académico</button>
+                        <button routerLink="/nivel-academico" routerLinkActive="active" class="btn" style="width: 100%;">{{ 'NivelAcademico' | translate }}</button>
                     </div>
                 </div>
             </div>

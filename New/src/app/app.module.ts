@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,11 @@ import { ErrorexzComponent } from './errorexz/errorexz.component';
 import { ErroresComponent } from './errores/errores.component';
 import { BitacorasExperimentalesComponent } from './bitacoras-experimentales/bitacoras-experimentales.component';
 import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+
+
+
 
 @NgModule({
   declarations: [
@@ -45,9 +51,21 @@ import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader:{
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient],
+      }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http:HttpClient) {
+  return new TranslateHttpLoader(http);
+}
