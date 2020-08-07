@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,10 +47,12 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
     ErrorexzComponent,
     ErroresComponent,
     BitacorasExperimentalesComponent,
-    NivelAcademicoComponent
+    NivelAcademicoComponent,
+   
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,

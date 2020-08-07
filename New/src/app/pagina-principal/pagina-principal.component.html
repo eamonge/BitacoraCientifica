@@ -8,7 +8,7 @@
                 <div class="col-md-12">
                     <h1 class="sectionTitle">{{ 'Proyectos' | translate }}</h1>
                     <div class="content-div">
-                        <form>
+                        <form [formGroup]>
                             <div class="form-group">
                                 <label for="" class="form-label">ID</label>
                                 <input type="text" class="form control" readonly>
@@ -19,7 +19,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="" class="form-label">{{ 'RamaCientifica' | translate }}</label>
-                                <select class="form-control col-md-3 formSelector" formControlName="bcRamaCientificaId">
+                                <select class="form-control col-md-3 formSelector">
                                   <!-- <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option> -->
                                 </select>
                             </div>    
