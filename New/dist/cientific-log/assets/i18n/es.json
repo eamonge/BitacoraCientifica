@@ -1,4 +1,13 @@
 {
+    
+    "Eliminar":"Eliminar",
+    "Privilegios":"Privilegios",
+    "Apodo":"Apodo",
+    "NombreUsuario":"Nombre de Usuario",
+    "CodigodelUsuario":"Codigo del usuario",
+    "PrivilegiosSistema":"Privilegios para el control del sistema",
+    "Ingresar":"Ingresar",
+    "CambioContraseña":"Cambio de Contraseña",
     "Despliegue":"Despliegue",
     "Cancelar":"Cancelar",
     "FechayHora":"Fecha y hora",

@@ -1,4 +1,12 @@
 {
+    "Eliminar":"Retirer",
+    "Privilegios":"Privilèges",
+    "Apodo":"Surnom",
+    "NombreUsuario":"Nom d'utilisateur",
+    "CodigodelUsuario":"Code d'utilisateur",
+    "PrivilegiosSistema":"Privilèges pour le contrôle du système",
+    "Ingresar":"Enterokay",
+    "CambioContraseña":"Changement de mot de passe",
     "Despliegue":"Déploiement",
     "Cancelar":"Annuler",
     "FechaFinal":"Date finale",

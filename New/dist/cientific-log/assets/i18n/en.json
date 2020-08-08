@@ -1,4 +1,12 @@
 {
+    "Eliminar":"Delete",
+    "Privilegios":"Privilegios",
+    "Apodo":"Nickname",
+    "NombreUsuario":"User Name",
+    "CodigodelUsuario":"User Code",
+    "PrivilegiosSistema":"Privileges for system control",
+    "Ingresar":"Add",
+    "CambioContraseña":"Password Change",
     "Despliegue":"Deployment",
     "Cancelar":"Cancel",
     "FechaFinal":"Last Date",

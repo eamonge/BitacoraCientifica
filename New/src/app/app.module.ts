@@ -18,7 +18,6 @@ import { RolesComponent } from './roles/roles.component';
 import { PuestosComponent } from './puestos/puestos.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { BitacoraComponent } from './bitacora/bitacora.component';
-import { ErrorexzComponent } from './errorexz/errorexz.component';
 import { ErroresComponent } from './errores/errores.component';
 import { BitacorasExperimentalesComponent } from './bitacoras-experimentales/bitacoras-experimentales.component';
 import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
@@ -44,7 +43,6 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
     PuestosComponent,
     UsuariosComponent,
     BitacoraComponent,
-    ErrorexzComponent,
     ErroresComponent,
     BitacorasExperimentalesComponent,
     NivelAcademicoComponent,

@@ -9,7 +9,7 @@
             <input type="password" class="form-control" formControlName="GetPass">
         </div>
         <div class="form-group">
-            <button class="btn" type="submit" [disabled]="FormularioLogin.invalid">Ingresar sesión</button>
+            <button class="btn" type="submit" routerLink="/inicio" routerLinkActive="active"  [disabled]="FormularioLogin.invalid">Ingresar sesión</button>
             <!-- <button class="btn">Ingresar sesión</button> -->
         </div>
     </form>
