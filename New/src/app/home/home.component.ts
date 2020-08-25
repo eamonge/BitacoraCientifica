@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../ServiciosAPI/Services/auth.service';
 declare const HideMenu:any;
 
 @Component({
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
     HideMenu();
   }
 
-  constructor() { }
+  constructor(public auth:AuthService) { }
 
   ngOnInit(): void {
   }

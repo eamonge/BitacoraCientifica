@@ -41,6 +41,8 @@ export class ApiServicioTipoConsecutivoService {
 
   }
 
- 
+  DeleteTipoConsecutivo(id:number): Observable<TipoConsecutivosModelo>{
+    return this.httpInit.delete<TipoConsecutivosModelo>(this.myAppURL+this.myApiURLDelete+id);
+ }
 
 }

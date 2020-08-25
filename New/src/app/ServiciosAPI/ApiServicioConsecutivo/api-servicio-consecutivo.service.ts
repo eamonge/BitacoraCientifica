@@ -20,6 +20,8 @@ export class ApiServicioConsecutivoService {
 
   myApiURLDelete = 'api/Consecutivos/DeleteOneConsecutivo/';
 
+  myApiUrlGetSoloUnConsecutivo = 'api/Consecutivos/GetConsecutivosCodigo/'
+
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json'
@@ -34,11 +36,16 @@ export class ApiServicioConsecutivoService {
     return this.httpInit.get<ConsecutivosModel[]>(this.myAppURL+this.myApiURLGetAll);
 
   }
+  getUnSoloConsecutivo(id:string):Observable<ConsecutivosModel[]>{
 
-  InsertaUnConsecutivo(ConsecutivoNuevo:ConsecutivosModel):Observable<ConsecutivosModel>{
+    return this.httpInit.get<ConsecutivosModel[]>(this.myAppURL+this.myApiUrlGetSoloUnConsecutivo+id);
 
-    console.log(ConsecutivoNuevo);    
-    return this.httpInit.post<ConsecutivosModel>(this.myAppURL+this.myApiURLInsert,ConsecutivoNuevo,this.httpOptions);
+  }
+
+  InsertaUnConsecutivo(NewConsecutivo:ConsecutivosModel):Observable<ConsecutivosModel>{
+
+    console.log(NewConsecutivo);    
+    return this.httpInit.post<ConsecutivosModel>(this.myAppURL+this.myApiURLInsert,NewConsecutivo,this.httpOptions);
 
   }
 

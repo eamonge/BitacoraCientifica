@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { AuthService } from '../app/ServiciosAPI/Services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'cientific-log';
 
-  constructor(private traduccion:TranslateService) {
-    traduccion.setDefaultLang('en');
+  constructor(private traduccion:TranslateService,private auth:AuthService) {
+    traduccion.setDefaultLang('es');
     
   }
 

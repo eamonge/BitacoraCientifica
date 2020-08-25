@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { AuthService } from '../ServiciosAPI/Services/auth.service';
 
 @Component({
   selector: 'app-navigation-menu',
@@ -8,11 +9,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavigationMenuComponent implements OnInit {
 
-  constructor(public translate:TranslateService) {
+  constructor(public translate:TranslateService,public auth:AuthService) {
     
-    translate.addLangs(['en','es','fr']);
-    translate.setDefaultLang('en');
-    translate.use('en')
+    translate.addLangs(['en','es','fr','de','it','zh']);
+  
     
   }
 

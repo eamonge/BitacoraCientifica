@@ -2,46 +2,51 @@
     <nav class="navbar-brand navbar-light">
         <h1 id="TitleH1">Dashboard</h1>
         <ul class="navbar-nav">
-            <li routerLink="/inicio" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/inicio" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Inicio' | translate }}</a></span>
             </li>
-            <li routerLink="/pagina-principal" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/pagina-principal" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Proyectos' | translate }}</a></span>
             </li>
-            <li routerLink="/rama-cientifica" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/rama-cientifica" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'RamaCientifica' | translate }}</a></span>
             </li>
-            <li routerLink="/tipo-consecutivo" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/tipo-consecutivo" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'TiposConsecutivos' | translate }}</a></span>
             </li>
-            <li routerLink="/consecutivo" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/consecutivo" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Consecutivos' | translate }}</a></span>
             </li>
-            <li routerLink="/roles" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/roles" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Roles' | translate }}</a></span>
             </li>
-            <li routerLink="/puestos" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/puestos" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Puestos' | translate }}</a></span>
             </li>
-            <li routerLink="/usuarios" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/usuarios" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Usuarios' | translate }}</a></span>
             </li>
-            <li routerLink="/bitacora" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/bitacora" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Bitacora' | translate }}</a></span>
             </li>
-            <li routerLink="/errores" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/errores" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'Errores' | translate }}</a></span>
             </li>
-            <li routerLink="/bitacoras-experimentales" routerLinkActive="active" class="nav-item">
+            <li *ngIf="!auth.loggedIn" routerLink="/bitacoras-experimentales" routerLinkActive="active" class="nav-item">
                 <span><a class="nav-link">{{ 'BitacorasExperimentales' | translate }}</a></span>
             </li>
-            
+            <li *ngIf="auth.loggedIn" routerLink="/CompraProyectos" routerLinkActive="active" class="nav-item">
+                <span><a class="nav-link">Ver los Proyectos Actuales para comprar</a></span>
+            </li>
+            <li *ngIf="auth.loggedIn" routerLink="/InsertarPaper" routerLinkActive="active" class="nav-item">
+                <span><a class="nav-link">Insertar Paper</a></span>
+            </li>
             <li>
                 <select class="form-control col-md-10" #langSelect (change)="OnChange(langSelect.value)">
                   <option>--idioma--</option>
                   <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang" >{{ lang }}</option>
                 </select>
-              </li>
+            </li>
         </ul>
     </nav>
     <!-- <nav class="navbar-brand navbar-light">

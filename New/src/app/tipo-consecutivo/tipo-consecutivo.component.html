@@ -9,18 +9,22 @@
                     <h1 class="sectionTitle">{{ 'Busqueda' | translate }}</h1>
                     <div class="content-div">
                        
+                        <form [formGroup]="FomularioTipoConsecutivo" (ngSubmit)="InsertarTipoConsecutivo()">
                             <div class="form-group">
                                 <label for="" class="form-label">{{ 'Codigo' | translate }}</label>
-                                <input type="text" class="form control" readonly placeholder="Readonly">
+                                <input type="text" class="form control" readonly value="Auto Generado">
                             </div>
                             <div class="form-group">
                                 <label for="" class="form-label">{{ 'Nombre' | translate }}</label>
-                                <input type="text" class="form control">
+                                <input type="text" class="form control" formControlName="DescripcionConsecutivo">
                             </div>
                             <div class="form-group">
-                                <button class="btn">{{ 'btnAñadir' | translate }}</button>
-                                <button class="btn">{{ 'btnBorrar' | translate }}</button>
-                            </div>                        
+                                <button class="btn" type="submit" [disabled]="FomularioTipoConsecutivo.invalid">{{ 'btnAñadir' | translate }}</button>
+                                
+                            </div>       
+                        </form>
+
+                                             
                       
                     </div>
                 </div>
@@ -28,15 +32,19 @@
                     <h1 class="sectionTitle">{{ 'Busqueda' | translate }}</h1>
                     <div class="content-div">
                         
+                        <form [formGroup]="FormularioBorraTipoConsecutivo" (ngSubmit)="BorrarTipoConsecutivo()">
                             <div class="form-group">
-                                <label for="" class="form-label">{{ 'Descripcion' | translate }}</label>
-                                <input type="text" class="form control">
-                            </div>                  
+                                <label  class="form-label">{{ 'Codigo' | translate }}</label>
+                                <input type="text" class="form control" formControlName="bcTipoConsecutivoId">
+                                <button class="btn" type="submit" [disabled]="FormularioBorraTipoConsecutivo.invalid">{{ 'btnBorrar' | translate }}</button>
+                            </div>    
+                        </form>
+                                          
                         
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <h1 class="sectionTitle">{{ 'Informacion' | translate }}</h1>
+                    <h1 class="sectionTitle">{{ 'Información' | translate }}</h1>
                     <div id="tablecontent" class="content-div">
                         <div class="col-sm-12 tables">
                             <table class="table">
@@ -47,9 +55,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>A</td>
-                                        <td>A</td>
+                                    <tr *ngFor="let tipoLista of ListaTiposConsecutivos">
+                                        <td>{{ tipoLista.bcTipoConsecutivoId }}</td>
+                                        <td>{{ tipoLista.descripcion }}</td>
                                     </tr>
                                    
                                 </tbody>

@@ -1,4 +1,4 @@
 export class RamasCientificasModel{
-    bcRamaCientificaId:string;
+    bcRamaCientificaId: number;
     nombre:string;
-}
+}   

@@ -1,4 +1,4 @@
 export class TipoConsecutivosModelo{
-    bcTipoConsecutivoId:number;
+    bcTipoConsecutivoId: number;
     descripcion:string;
 }

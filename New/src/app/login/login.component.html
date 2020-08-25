@@ -1,16 +1,44 @@
-<div id="LoginDiv" class="col-lg-12">
+<div  id="LoginDiv" class="col-lg-12">
     <h1 class="display-4 loginText">BIENVENIDOS</h1>
     <hr>
     <form [formGroup]="FormularioLogin" (ngSubmit)="AuthUsuario()">
-        <div class="form-group">
+        <div *ngIf="!auth.loggedIn" class="form-group">
             <label for="" class="form-label">Usuario</label>
             <input type="text" class="form-control" formControlName="GetUser">
             <label for="" class="form-label">Contraseña</label>
             <input type="password" class="form-control" formControlName="GetPass">
         </div>
         <div class="form-group">
-            <button class="btn" type="submit" routerLink="/inicio" routerLinkActive="active"  [disabled]="FormularioLogin.invalid">Ingresar sesión</button>
+            <button class="btn" type="submit" *ngIf="!auth.loggedIn" routerLink="/inicio" routerLinkActive="active"  [disabled]="FormularioLogin.invalid">Ingresar sesión</button>
             <!-- <button class="btn">Ingresar sesión</button> -->
         </div>
+       
     </form>
+    <form [formGroup]="FormularioLogin" (ngSubmit)="AuthUsuario()">
+        <div *ngIf="auth.loggedIn" class="form-group">
+            <label for="" class="form-label">Usuario</label>
+            <input type="text" class="form-control" formControlName="GetUser">
+            <label for="" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" formControlName="GetPass">
+        </div>
+        <div class="form-group">
+            <button class="btn" type="submit" *ngIf="auth.loggedIn" routerLink="/inicio" routerLinkActive="active"  [disabled]="FormularioLogin.invalid">Ingresar sesión</button>
+            <!-- <button class="btn">Ingresar sesión</button> -->
+        </div>
+       
+    </form>
+    <div class="form-group">
+        <button class="btn" (click)="auth.login()" *ngIf="!auth.loggedIn" routerLink="/inicio" routerLinkActive="active" >Ingresar sesión como cliente</button>
+        <!-- <button class="btn">Ingresar sesión</button> -->
+    </div>
+    <div  *ngIf="auth.loggedIn" class="card" style="width: 18rem;">
+        <div class="card-header">
+          Credencial de compra
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Username: Claudio</li>
+          <li class="list-group-item">Password: admin123</li>
+          
+        </ul>
+      </div>
 </div>

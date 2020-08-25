@@ -1,5 +1,5 @@
 export class ProyectosModel{
-    bcProyectoId:string;
+    bcProyectoId: string;
     nombre:string;
-    bcRamaCientificaId:string;
+    bcRamaCientificaId: string;
 }

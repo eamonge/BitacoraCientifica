@@ -1,37 +1,40 @@
-<div id="PaginaPrincipDiv" class="row contentcols">
+<div  id="PaginaPrincipDiv" class="row contentcols">
+
     <div id="AppNavCol" class="col-md-2">
         <app-navigation-menu></app-navigation-menu>
     </div>
+    
     <div class="col-md-10">
         <div class="col-md-12">
-            <div class="row">
+            <div *ngIf="!auth.loggedIn" class="row">
                 <div class="col-md-12">
                     <h1 class="sectionTitle">{{ 'Proyectos' | translate }}</h1>
                     <div class="content-div">
-                        <form [formGroup]>
+                        <form [formGroup]="FormularioProyectos" (ngSubmit)="InsertProyecto()">
+                           
+                           
                             <div class="form-group">
-                                <label for="" class="form-label">ID</label>
-                                <input type="text" class="form control" readonly>
-                            </div>
+                                <label for="" class="form-label">Proyectos</label>
+                                <input type="text" class="form control" formControlName="nombreProyecto">
+                            </div>   
                             <div class="form-group">
-                                <label for="" class="form-label">{{ 'Nombre' | translate }}</label>
-                                <input type="text" class="form control">
-                            </div>
+                                <label for="" class="form-label">Autor</label>
+                                <input type="text" class="form control" formControlName="Autor">
+                            </div>   
                             <div class="form-group">
-                                <label for="" class="form-label">{{ 'RamaCientifica' | translate }}</label>
-                                <select class="form-control col-md-3 formSelector">
-                                  <!-- <option *ngFor="let ramasActuales of ListaRamasCientificas" [ngValue]="ramasActuales.bcRamaCientificaId">{{ramasActuales.bcRamaCientificaId}}</option> -->
-                                </select>
+                                <label for="" class="form-label">Precio</label>
+                                <input type="text" class="form control" formControlName="Precio">
                             </div>    
                             <div class="form-group">
-                                <button class="btn">{{ 'btnAñadir' | translate }}</button>
+                                <button class="btn" type="submit" [disabled]="FormularioProyectos.invalid">{{ 'btnAñadir' | translate }}</button>
                                 <button class="btn">{{ 'btnBorrar' | translate }}</button>
-                            </div>                        
+                            </div>
+
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <h1 class="sectionTitle">{{ 'Informacion' | translate }}</h1>
+                    <h1 class="sectionTitle">{{ 'Información' | translate }}</h1>
                     <div class="content-div">
                         <div class="col-sm-6 tables">
                             <table class="table">
@@ -53,7 +56,7 @@
                             </table>
                         </div>
                         <div class="col-sm-6 tables">
-                            <p>tavles</p>
+                          
                         </div>
                     </div>
                 </div>

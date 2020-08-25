@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-//import { Router, ActivatedRoute } from '@angular/router';
 import { LoginModel } from "../ServiciosAPI/Modelos/Login";
+import { AuthService } from '../ServiciosAPI/Services/auth.service';
 declare const myFun:any;
 
 @Component({
@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   GetAuth:string = 'StartAuth'
   FormularioLogin: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,public auth:AuthService) {
     
     this.FormularioLogin = this.formBuilder.group({
       GetUser: ['', Validators.required],

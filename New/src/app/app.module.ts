@@ -23,6 +23,7 @@ import { BitacorasExperimentalesComponent } from './bitacoras-experimentales/bit
 import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { CompraProyectoComponent } from './CompraProyectos/compra-proyecto/compra-proyecto.component';
 
 
 
@@ -46,6 +47,8 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
     ErroresComponent,
     BitacorasExperimentalesComponent,
     NivelAcademicoComponent,
+    CompraProyectoComponent,
+  
    
   ],
   imports: [

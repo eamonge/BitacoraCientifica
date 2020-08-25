@@ -1,8 +1,8 @@
 export class ConsecutivosModel{
-    bcConsecutivoId:number;
+    bcConsecutivoId: number;
+    //descripcionTipoConsecutivo: string;
     bcTipoConsecutivoId:number;
-    descripcionTipoConsecutivo;
-    descripcion:string;
-    valor:string;
+    Descripcion:string;
+    valor:number;
     prefijo:string;
 }

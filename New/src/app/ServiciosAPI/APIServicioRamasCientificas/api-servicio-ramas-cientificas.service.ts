@@ -43,9 +43,15 @@ export class ApiServicioRamasCientificasService {
 
   }
 
-  BuscarRamaCientifca(id:string):Observable<RamasCientificasModel>{
+  BuscarRamaCientifca(id:number):Observable<RamasCientificasModel>{
 
     return this.httpInit.get<RamasCientificasModel>(this.myAppURL+this.myApiURLGetOne+id);
+
+  }
+
+  BorrarRamaCientificaSeleccionado(id:number):Observable<RamasCientificasModel>{
+
+    return this.httpInit.delete<RamasCientificasModel>(this.myAppURL+this.myApiURLDelete+id);
 
   }
 }

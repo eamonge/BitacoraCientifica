@@ -12,6 +12,7 @@ import { ErroresComponent } from './errores/errores.component';
 import { BitacorasExperimentalesComponent } from './bitacoras-experimentales/bitacoras-experimentales.component';
 import { NivelAcademicoComponent } from './nivel-academico/nivel-academico.component';
 import { HomeComponent } from './home/home.component';
+import { CompraProyectoComponent } from './CompraProyectos/compra-proyecto/compra-proyecto.component';
 
 const routes: Routes = [
   {path: 'pagina-principal', component: PaginaPrincipalComponent},
@@ -25,7 +26,9 @@ const routes: Routes = [
   {path: 'errores', component: ErroresComponent},
   {path: 'bitacoras-experimentales', component: BitacorasExperimentalesComponent},
   {path: 'nivel-academico', component: NivelAcademicoComponent},
-  {path: 'inicio', component:HomeComponent}
+  { path: 'inicio', component: HomeComponent },
+  { path: 'CompraProyectos', component: CompraProyectoComponent },
+
 ];
 
 @NgModule({

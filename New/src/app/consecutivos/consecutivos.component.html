@@ -6,50 +6,62 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="sectionTitle">{{ 'Informacion' | translate }}</h1>
+                    <h1 class="sectionTitle">{{ 'Información' | translate }}</h1>
                     <div class="content-div">
                         
-                            <div class="form-group">
-                                <label for="" class="form-label">{{ 'Tipo' | translate }}</label>
-                                <input type="text" class="form control" readonly placeholder="Readonly">
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="form-label">{{ 'Descripcion' | translate }}</label>
-                                <input type="text" class="form control">
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="form-label">{{ 'ValorConsecutivo' | translate }}</label>
-                                <input type="text" class="form control">
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" class="form control">
-                                <label for="" class="form-label" style="margin-left: 0;">{{ 'PoseePrefijo' | translate }}</label>
-                                <input type="text" class="form control" readonly>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn">{{ 'btnAñadir' | translate }}</button>
-                                <button class="btn">{{ 'btnBorrar' | translate }}</button>
-                            </div>                        
-                       
+                            <form [formGroup]="FomularioConsecutivo" (ngSubmit)="InsertarConsecutivo()">
+
+                                <div class="form-group">
+                                    <label for="" class="form-label">{{ 'Tipo' | translate }}</label>
+                                    <select class="form-control col-md-3 formSelector" formControlName="bcTipoConsecutivoId">
+                                        <option *ngFor="let tipoActuales of ListaTiposConsecutivos" [ngValue]="tipoActuales.bcTipoConsecutivoId">{{tipoActuales.descripcion}}</option>
+                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">{{ 'Descripcion' | translate }}</label>
+                                    <input type="text" class="form control" formControlName="Descripcion">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">{{ 'ValorConsecutivo' | translate }}</label>
+                                    <input type="number" class="form control" formControlName="ValorConsecutivo">
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form control">
+                                    <label for="" class="form-label" style="margin-left: 0;">{{ 'PoseePrefijo' | translate }}</label>
+                                    <input type="text" class="form control" formControlName="Prefijo">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn" type="submit" [disabled]="FomularioConsecutivo.invalid">{{ 'btnAñadir' | translate }}</button>
+                                   
+                                </div>           
+                            </form>
+
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h1 class="sectionTitle">{{ 'Busqueda' | translate }}</h1>
                     <div class="content-div">
                        
+                        <form [formGroup]="FormularioSearchConsecutivp">
                             <div class="form-group">
                                 <label for="" class="form-label">{{ 'Codigo' | translate }}</label>
-                                <input type="text" class="form control">
+                                <input type="text" class="form control" formControlName="bcTipoConsecutivoIdSearch">
                             </div>
+                                       
+                            <button class="btn">{{ 'btnBorrar' | translate }}</button>
+                        </form>
+                        <form [formGroup]="FormularioDeleteConsecutivp">
                             <div class="form-group">
                                 <label for="" class="form-label">{{ 'Nombre' | translate }}</label>
-                                <input type="text" class="form control">
-                            </div>                     
-                       
+                                <input type="text" class="form control" formControlName="bcTipoConsecutivoIdDelete">
+                            </div>    
+                            <button class="btn">{{ 'btnBuscar' | translate }}</button>     
+                        </form>
+                           
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <h1 class="sectionTitle">{{ 'Informacion' | translate }}</h1>
+                    <h1 class="sectionTitle">{{ 'Información' | translate }}</h1>
                     <div class="content-div">
                         <div class="col-sm-12 tables">
                             <table class="table">
@@ -63,12 +75,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
-                                        <td>A</td>
+                                    <tr *ngFor="let datosConsecutivo of ListaSoloConsecutivos">
+                                        <td>{{datosConsecutivo.bcConsecutivoId}}</td>
+                                        <td>{{datosConsecutivo.descripcionTipoConsecutivo}}</td>
+                                        <td>{{datosConsecutivo.descripcion}}</td>
+                                        <td>{{datosConsecutivo.valor}}</td>
+                                        <td>{{datosConsecutivo.prefijo}}</td>
+                                       
                                     </tr>
                                    
                                 </tbody>
